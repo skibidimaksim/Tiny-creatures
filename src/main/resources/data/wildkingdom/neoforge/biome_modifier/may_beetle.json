@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/may_beetle",
+ "spawners": {
+  "type": "wildkingdom:may_beetle",
+  "weight": 9,
+  "minCount": 2,
+  "maxCount": 4
+ }
+}

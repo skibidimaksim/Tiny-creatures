@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/hummingbird",
+ "spawners": {
+  "type": "wildkingdom:hummingbird",
+  "weight": 10,
+  "minCount": 2,
+  "maxCount": 5
+ }
+}

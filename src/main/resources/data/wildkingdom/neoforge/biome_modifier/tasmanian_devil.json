@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/tasmanian_devil",
+ "spawners": {
+  "type": "wildkingdom:tasmanian_devil",
+  "weight": 7,
+  "minCount": 1,
+  "maxCount": 3
+ }
+}

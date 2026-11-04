@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/car_cockroach",
+ "spawners": {
+  "type": "wildkingdom:car_cockroach",
+  "weight": 8,
+  "minCount": 2,
+  "maxCount": 4
+ }
+}

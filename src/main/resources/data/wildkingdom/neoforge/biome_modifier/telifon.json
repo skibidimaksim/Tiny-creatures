@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/telifon",
+ "spawners": {
+  "type": "wildkingdom:telifon",
+  "weight": 7,
+  "minCount": 1,
+  "maxCount": 3
+ }
+}

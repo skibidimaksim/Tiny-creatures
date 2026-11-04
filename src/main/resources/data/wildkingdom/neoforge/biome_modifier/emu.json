@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/emu",
+ "spawners": {
+  "type": "wildkingdom:emu",
+  "weight": 8,
+  "minCount": 2,
+  "maxCount": 4
+ }
+}

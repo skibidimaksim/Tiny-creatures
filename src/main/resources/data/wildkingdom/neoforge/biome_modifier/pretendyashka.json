@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/pretendyashka",
+ "spawners": {
+  "type": "wildkingdom:pretendyashka",
+  "weight": 9,
+  "minCount": 2,
+  "maxCount": 4
+ }
+}

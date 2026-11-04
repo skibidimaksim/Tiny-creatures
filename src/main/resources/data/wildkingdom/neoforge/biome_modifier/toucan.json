@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/toucan",
+ "spawners": {
+  "type": "wildkingdom:toucan",
+  "weight": 9,
+  "minCount": 2,
+  "maxCount": 4
+ }
+}

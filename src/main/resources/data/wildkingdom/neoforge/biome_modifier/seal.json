@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/seal",
+ "spawners": {
+  "type": "wildkingdom:seal",
+  "weight": 8,
+  "minCount": 2,
+  "maxCount": 5
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/anaconda",
+ "spawners": {
+  "type": "wildkingdom:anaconda",
+  "weight": 5,
+  "minCount": 1,
+  "maxCount": 2
+ }
+}

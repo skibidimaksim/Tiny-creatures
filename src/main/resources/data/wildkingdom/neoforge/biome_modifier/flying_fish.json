@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/flying_fish",
+ "spawners": {
+  "type": "wildkingdom:flying_fish",
+  "weight": 12,
+  "minCount": 3,
+  "maxCount": 6
+ }
+}

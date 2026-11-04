@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/snow_leopard",
+ "spawners": {
+  "type": "wildkingdom:snow_leopard",
+  "weight": 5,
+  "minCount": 1,
+  "maxCount": 2
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/anteater",
+ "spawners": {
+  "type": "wildkingdom:anteater",
+  "weight": 8,
+  "minCount": 1,
+  "maxCount": 2
+ }
+}

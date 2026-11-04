@@ -1,7 +1,49 @@
-# Tiny Creatures — prototype for Minecraft 1.21.1 / NeoForge
+# Wild Kingdom
 
-This is **source code**, not a compiled or tested mod. The build must be tested in GitHub Actions. NeoForge versions are currently set to 21.1.+ and the ModDevGradle plugin to 2.0.+.
+NeoForge 1.21.11 + GeckoLib 5.4.3. 45 animated 3D animals with spawn eggs, natural spawning and drops.
 
-The snail is a **turtle-derived placeholder** with 2 HP and a 4 HP shell shield. It does **not** yet have a custom 3D model, custom renderer, spawning, shell-hiding animation or textures. Those are next steps after a successful baseline build.
-
-Upload all contents of this ZIP into the repository root. GitHub Actions -> Build Tiny Creatures -> Run workflow. If the build fails, share the error log for correction.
+- Gazelle / Газель
+- Bison / Бизон
+- Elephant / Слон
+- Moose / Лось
+- Grizzly Bear / Гризли
+- Tiger / Тигр
+- Snow Leopard / Снежный барс
+- Rhinoceros / Носорог
+- Raccoon / Енот
+- Skunk / Скунс
+- Tasmanian Devil / Тасманский дьявол
+- Anteater / Муравьед
+- Kangaroo / Кенгуру
+- Jerboa / Тушканчик
+- Gorilla / Горилла
+- Emu / Эму
+- Seal / Тюлень
+- Crocodile / Крокодил
+- Caiman / Кайман
+- Komodo Dragon / Комодский варан
+- Anaconda / Анаконда
+- Rattlesnake / Гремучая змея
+- Lobster / Лобстер
+- Seagull / Чайка
+- Hummingbird / Колибри
+- Toucan / Тукан
+- Bald Eagle / Белоголовый орлан
+- Crow / Ворона
+- Catfish / Сом
+- Flying Fish / Летучая рыба
+- Moonfish / Монета
+- Hammerhead Shark / Акула-молот
+- Sperm Whale / Кашалот
+- Orca / Косатка
+- Histerid Beetle / Карапузик
+- Leaf Beetle / Козявка
+- Oil Beetle / Жук-майка
+- Death-watch Beetle / Притворяшка
+- Cockroach / Таракан
+- Headlight Cockroach / Таракан-автомобильчик
+- Fly / Муха
+- Chironomid Midge / Комар-звонец
+- Fignya Moth / Фигня
+- Whip Scorpion / Телифон
+- Strashila / Страшила невероятная

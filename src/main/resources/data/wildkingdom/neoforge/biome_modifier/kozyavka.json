@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/kozyavka",
+ "spawners": {
+  "type": "wildkingdom:kozyavka",
+  "weight": 10,
+  "minCount": 2,
+  "maxCount": 5
+ }
+}

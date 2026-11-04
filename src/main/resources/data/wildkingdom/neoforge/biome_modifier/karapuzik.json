@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/karapuzik",
+ "spawners": {
+  "type": "wildkingdom:karapuzik",
+  "weight": 9,
+  "minCount": 2,
+  "maxCount": 4
+ }
+}

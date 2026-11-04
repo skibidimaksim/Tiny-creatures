@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/catfish",
+ "spawners": {
+  "type": "wildkingdom:catfish",
+  "weight": 10,
+  "minCount": 2,
+  "maxCount": 4
+ }
+}

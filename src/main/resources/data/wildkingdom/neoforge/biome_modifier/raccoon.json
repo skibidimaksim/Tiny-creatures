@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/raccoon",
+ "spawners": {
+  "type": "wildkingdom:raccoon",
+  "weight": 10,
+  "minCount": 1,
+  "maxCount": 3
+ }
+}

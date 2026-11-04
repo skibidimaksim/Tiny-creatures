@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/rattlesnake",
+ "spawners": {
+  "type": "wildkingdom:rattlesnake",
+  "weight": 8,
+  "minCount": 1,
+  "maxCount": 2
+ }
+}

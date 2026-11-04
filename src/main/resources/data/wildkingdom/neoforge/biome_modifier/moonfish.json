@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/moonfish",
+ "spawners": {
+  "type": "wildkingdom:moonfish",
+  "weight": 12,
+  "minCount": 3,
+  "maxCount": 6
+ }
+}

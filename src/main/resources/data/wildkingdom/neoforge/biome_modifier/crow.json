@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/crow",
+ "spawners": {
+  "type": "wildkingdom:crow",
+  "weight": 12,
+  "minCount": 3,
+  "maxCount": 6
+ }
+}

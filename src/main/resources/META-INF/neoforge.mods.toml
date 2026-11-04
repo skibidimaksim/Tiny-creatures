@@ -1,20 +1,29 @@
 modLoader="javafml"
-loaderVersion="[4,)"
+loaderVersion="[1,)"
 license="All Rights Reserved"
+showAsResourcePack=false
+showAsDataPack=false
 [[mods]]
-modId="tinycreatures"
-version="${version}"
-displayName="Tiny Creatures"
-description="Tiny creatures for Minecraft, starting with a snail."
-[[dependencies.tinycreatures]]
+modId="wildkingdom"
+version="1.0.0"
+displayName="Wild Kingdom"
+authors="Maksim"
+description='''45 animated 3D animals and arthropods (GeckoLib): savanna giants, predators, birds, sea monsters, reptiles and real-life oddities. Spawn eggs, natural spawning, drops. English and Russian.'''
+[[dependencies.wildkingdom]]
 modId="neoforge"
 type="required"
-versionRange="[21.1,)"
+versionRange="[21.11.45,)"
 ordering="NONE"
 side="BOTH"
-[[dependencies.tinycreatures]]
+[[dependencies.wildkingdom]]
 modId="minecraft"
 type="required"
-versionRange="[1.21.1,1.21.2)"
+versionRange="[1.21.11]"
 ordering="NONE"
+side="BOTH"
+[[dependencies.wildkingdom]]
+modId="geckolib"
+type="required"
+versionRange="[5.4.3,5.5)"
+ordering="AFTER"
 side="BOTH"

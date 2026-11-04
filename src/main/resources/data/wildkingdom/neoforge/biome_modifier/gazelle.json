@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/gazelle",
+ "spawners": {
+  "type": "wildkingdom:gazelle",
+  "weight": 10,
+  "minCount": 3,
+  "maxCount": 6
+ }
+}

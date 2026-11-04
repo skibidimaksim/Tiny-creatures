@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/crocodile",
+ "spawners": {
+  "type": "wildkingdom:crocodile",
+  "weight": 5,
+  "minCount": 1,
+  "maxCount": 2
+ }
+}
