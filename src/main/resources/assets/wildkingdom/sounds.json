@@ -1,0 +1,272 @@
+{
+ "roar_ambient": {
+  "sounds": [
+   "wildkingdom:mob/roar_ambient"
+  ]
+ },
+ "roar_hurt": {
+  "sounds": [
+   "wildkingdom:mob/roar_hurt"
+  ]
+ },
+ "roar_death": {
+  "sounds": [
+   "wildkingdom:mob/roar_death"
+  ]
+ },
+ "growl_ambient": {
+  "sounds": [
+   "wildkingdom:mob/growl_ambient"
+  ]
+ },
+ "growl_hurt": {
+  "sounds": [
+   "wildkingdom:mob/growl_hurt"
+  ]
+ },
+ "growl_death": {
+  "sounds": [
+   "wildkingdom:mob/growl_death"
+  ]
+ },
+ "trumpet_ambient": {
+  "sounds": [
+   "wildkingdom:mob/trumpet_ambient"
+  ]
+ },
+ "trumpet_hurt": {
+  "sounds": [
+   "wildkingdom:mob/trumpet_hurt"
+  ]
+ },
+ "trumpet_death": {
+  "sounds": [
+   "wildkingdom:mob/trumpet_death"
+  ]
+ },
+ "bellow_ambient": {
+  "sounds": [
+   "wildkingdom:mob/bellow_ambient"
+  ]
+ },
+ "bellow_hurt": {
+  "sounds": [
+   "wildkingdom:mob/bellow_hurt"
+  ]
+ },
+ "bellow_death": {
+  "sounds": [
+   "wildkingdom:mob/bellow_death"
+  ]
+ },
+ "neigh_ambient": {
+  "sounds": [
+   "wildkingdom:mob/neigh_ambient"
+  ]
+ },
+ "neigh_hurt": {
+  "sounds": [
+   "wildkingdom:mob/neigh_hurt"
+  ]
+ },
+ "neigh_death": {
+  "sounds": [
+   "wildkingdom:mob/neigh_death"
+  ]
+ },
+ "squeak_ambient": {
+  "sounds": [
+   "wildkingdom:mob/squeak_ambient"
+  ]
+ },
+ "squeak_hurt": {
+  "sounds": [
+   "wildkingdom:mob/squeak_hurt"
+  ]
+ },
+ "squeak_death": {
+  "sounds": [
+   "wildkingdom:mob/squeak_death"
+  ]
+ },
+ "bark_ambient": {
+  "sounds": [
+   "wildkingdom:mob/bark_ambient"
+  ]
+ },
+ "bark_hurt": {
+  "sounds": [
+   "wildkingdom:mob/bark_hurt"
+  ]
+ },
+ "bark_death": {
+  "sounds": [
+   "wildkingdom:mob/bark_death"
+  ]
+ },
+ "caw_ambient": {
+  "sounds": [
+   "wildkingdom:mob/caw_ambient"
+  ]
+ },
+ "caw_hurt": {
+  "sounds": [
+   "wildkingdom:mob/caw_hurt"
+  ]
+ },
+ "caw_death": {
+  "sounds": [
+   "wildkingdom:mob/caw_death"
+  ]
+ },
+ "chirp_ambient": {
+  "sounds": [
+   "wildkingdom:mob/chirp_ambient"
+  ]
+ },
+ "chirp_hurt": {
+  "sounds": [
+   "wildkingdom:mob/chirp_hurt"
+  ]
+ },
+ "chirp_death": {
+  "sounds": [
+   "wildkingdom:mob/chirp_death"
+  ]
+ },
+ "screech_ambient": {
+  "sounds": [
+   "wildkingdom:mob/screech_ambient"
+  ]
+ },
+ "screech_hurt": {
+  "sounds": [
+   "wildkingdom:mob/screech_hurt"
+  ]
+ },
+ "screech_death": {
+  "sounds": [
+   "wildkingdom:mob/screech_death"
+  ]
+ },
+ "hoot_ambient": {
+  "sounds": [
+   "wildkingdom:mob/hoot_ambient"
+  ]
+ },
+ "hoot_hurt": {
+  "sounds": [
+   "wildkingdom:mob/hoot_hurt"
+  ]
+ },
+ "hoot_death": {
+  "sounds": [
+   "wildkingdom:mob/hoot_death"
+  ]
+ },
+ "honk_ambient": {
+  "sounds": [
+   "wildkingdom:mob/honk_ambient"
+  ]
+ },
+ "honk_hurt": {
+  "sounds": [
+   "wildkingdom:mob/honk_hurt"
+  ]
+ },
+ "honk_death": {
+  "sounds": [
+   "wildkingdom:mob/honk_death"
+  ]
+ },
+ "hiss_ambient": {
+  "sounds": [
+   "wildkingdom:mob/hiss_ambient"
+  ]
+ },
+ "hiss_hurt": {
+  "sounds": [
+   "wildkingdom:mob/hiss_hurt"
+  ]
+ },
+ "hiss_death": {
+  "sounds": [
+   "wildkingdom:mob/hiss_death"
+  ]
+ },
+ "click_ambient": {
+  "sounds": [
+   "wildkingdom:mob/click_ambient"
+  ]
+ },
+ "click_hurt": {
+  "sounds": [
+   "wildkingdom:mob/click_hurt"
+  ]
+ },
+ "click_death": {
+  "sounds": [
+   "wildkingdom:mob/click_death"
+  ]
+ },
+ "buzz_ambient": {
+  "sounds": [
+   "wildkingdom:mob/buzz_ambient"
+  ]
+ },
+ "buzz_hurt": {
+  "sounds": [
+   "wildkingdom:mob/buzz_hurt"
+  ]
+ },
+ "buzz_death": {
+  "sounds": [
+   "wildkingdom:mob/buzz_death"
+  ]
+ },
+ "whale_ambient": {
+  "sounds": [
+   "wildkingdom:mob/whale_ambient"
+  ]
+ },
+ "whale_hurt": {
+  "sounds": [
+   "wildkingdom:mob/whale_hurt"
+  ]
+ },
+ "whale_death": {
+  "sounds": [
+   "wildkingdom:mob/whale_death"
+  ]
+ },
+ "whistle_ambient": {
+  "sounds": [
+   "wildkingdom:mob/whistle_ambient"
+  ]
+ },
+ "whistle_hurt": {
+  "sounds": [
+   "wildkingdom:mob/whistle_hurt"
+  ]
+ },
+ "whistle_death": {
+  "sounds": [
+   "wildkingdom:mob/whistle_death"
+  ]
+ },
+ "splash_ambient": {
+  "sounds": [
+   "wildkingdom:mob/splash_ambient"
+  ]
+ },
+ "splash_hurt": {
+  "sounds": [
+   "wildkingdom:mob/splash_hurt"
+  ]
+ },
+ "splash_death": {
+  "sounds": [
+   "wildkingdom:mob/splash_death"
+  ]
+ }
+}

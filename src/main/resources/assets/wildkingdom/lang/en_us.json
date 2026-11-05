@@ -160,5 +160,10 @@
  "msg.wildkingdom.sit": "Sitting",
  "msg.wildkingdom.stand": "Following you",
  "msg.wildkingdom.tamed": "Tamed!",
- "msg.wildkingdom.saddled": "Saddled"
+ "msg.wildkingdom.saddled": "Saddled",
+ "item.wildkingdom.bestiary": "Wild Kingdom Bestiary",
+ "gui.wildkingdom.bestiary": "Wild Kingdom Bestiary",
+ "gui.wildkingdom.rideable": "[rideable]",
+ "gui.wildkingdom.boss": "[boss]",
+ "gui.wildkingdom.herd": "[herd]"
 }

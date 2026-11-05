@@ -160,5 +160,10 @@
  "msg.wildkingdom.sit": "Сидит",
  "msg.wildkingdom.stand": "Идёт за вами",
  "msg.wildkingdom.tamed": "Приручено!",
- "msg.wildkingdom.saddled": "Седло надето"
+ "msg.wildkingdom.saddled": "Седло надето",
+ "item.wildkingdom.bestiary": "Энциклопедия животных",
+ "gui.wildkingdom.bestiary": "Энциклопедия Wild Kingdom",
+ "gui.wildkingdom.rideable": "[верховое]",
+ "gui.wildkingdom.boss": "[босс]",
+ "gui.wildkingdom.herd": "[стадо]"
 }

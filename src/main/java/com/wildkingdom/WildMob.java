@@ -562,13 +562,13 @@ public abstract class WildMob extends Animal implements GeoEntity {
 
     // ------------------------------------------------------------ sounds
     @Override
-    protected SoundEvent getAmbientSound() { return Sounds.get(spec.snd())[0]; }
+    protected SoundEvent getAmbientSound() { return Sounds.get(spec.id())[0]; }
 
     @Override
-    protected SoundEvent getHurtSound(DamageSource source) { return Sounds.get(spec.snd())[1]; }
+    protected SoundEvent getHurtSound(DamageSource source) { return Sounds.get(spec.id())[1]; }
 
     @Override
-    protected SoundEvent getDeathSound() { return Sounds.get(spec.snd())[2]; }
+    protected SoundEvent getDeathSound() { return Sounds.get(spec.id())[2]; }
 
     // ------------------------------------------------------------ animation
     @Override

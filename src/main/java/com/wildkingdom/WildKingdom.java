@@ -36,6 +36,8 @@ public final class WildKingdom {
     public static final Map<String, DeferredItem<Item>> MATS = new LinkedHashMap<>();
     public static final Map<String, DeferredItem<Item>> TOOLS = new LinkedHashMap<>();
 
+    public static final DeferredItem<Item> BESTIARY = ITEMS.registerItem("bestiary", BestiaryItem::new, new Item.Properties().stacksTo(1));
+
     static {
         for (String n : new String[]{"predator_claw", "beast_fang", "ivory", "beast_horn", "thick_hide",
                 "chitin_shard", "megalodon_tooth", "titan_scale", "emperor_stinger"}) {
@@ -74,6 +76,7 @@ public final class WildKingdom {
 
     public WildKingdom(IEventBus modBus) {
         ITEMS.register(modBus);
+        Sounds.REG.register(modBus);
         ENTITIES.register(modBus);
         modBus.addListener(WildKingdom::attributes);
         modBus.addListener(WildKingdom::spawnPlacements);
@@ -109,6 +112,7 @@ public final class WildKingdom {
             for (DeferredItem<SpawnEggItem> egg : EGGS) e.accept(egg.get());
         }
         if (e.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            e.accept(BESTIARY.get());
             for (DeferredItem<Item> it : MATS.values()) e.accept(it.get());
         }
         if (e.getTabKey() == CreativeModeTabs.COMBAT) {
