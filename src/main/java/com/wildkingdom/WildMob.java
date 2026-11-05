@@ -1,6 +1,7 @@
 package com.wildkingdom;
 
 import java.util.Arrays;
+import java.util.EnumSet;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -72,6 +73,7 @@ public abstract class WildMob extends PathfinderMob implements GeoEntity {
 
     /** Called from the constructor (registerGoals runs too early, before spec is set). */
     private void initGoals() {
+        this.goalSelector.addGoal(0, new RiddenGoal(this));
         this.goalSelector.addGoal(0, new FloatGoal(this));
         if (spec.ai() == 0) {
             this.goalSelector.addGoal(1, new PanicGoal(this, 1.5));
@@ -171,14 +173,30 @@ public abstract class WildMob extends PathfinderMob implements GeoEntity {
         return super.mobInteract(player, hand);
     }
 
-    @Override
-    protected void serverAiStep() {
-        if (this.getControllingPassenger() != null) {
-            this.getNavigation().stop();
-            this.setTarget(null);
-            return;
+    /** While a player rides the animal its own AI must not move it. */
+    static final class RiddenGoal extends Goal {
+        private final WildMob mob;
+
+        RiddenGoal(WildMob mob) {
+            this.mob = mob;
+            this.setFlags(EnumSet.of(Goal.Flag.MOVE, Goal.Flag.LOOK, Goal.Flag.JUMP));
         }
-        super.serverAiStep();
+
+        @Override
+        public boolean canUse() {
+            return mob.getControllingPassenger() != null;
+        }
+
+        @Override
+        public void start() {
+            mob.getNavigation().stop();
+            mob.setTarget(null);
+        }
+
+        @Override
+        public void tick() {
+            mob.setTarget(null);
+        }
     }
 
     @Override
