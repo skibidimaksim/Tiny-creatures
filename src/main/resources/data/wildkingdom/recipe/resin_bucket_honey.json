@@ -1,0 +1,16 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  "minecraft:bucket",
+  "minecraft:honey_bottle",
+  "minecraft:honey_bottle",
+  "minecraft:honey_bottle",
+  "#minecraft:logs",
+  "#minecraft:logs"
+ ],
+ "result": {
+  "id": "wildkingdom:resin_bucket",
+  "count": 1
+ }
+}

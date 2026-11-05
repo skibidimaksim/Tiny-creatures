@@ -77,6 +77,7 @@ public final class WildKingdom {
     public WildKingdom(IEventBus modBus) {
         ITEMS.register(modBus);
         Sounds.REG.register(modBus);
+        Resin.init(modBus);
         ENTITIES.register(modBus);
         modBus.addListener(WildKingdom::attributes);
         modBus.addListener(WildKingdom::spawnPlacements);
@@ -114,6 +115,12 @@ public final class WildKingdom {
         if (e.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             e.accept(BESTIARY.get());
             for (DeferredItem<Item> it : MATS.values()) e.accept(it.get());
+        }
+        if (e.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+            e.accept(Resin.BUCKET.get());
+            e.accept(Resin.AMBER.get());
+            e.accept(Resin.MOLD_ITEM.get());
+            for (DeferredItem<net.minecraft.world.item.BlockItem> it : Resin.SPEC_ITEM.values()) e.accept(it.get());
         }
         if (e.getTabKey() == CreativeModeTabs.COMBAT) {
             for (DeferredItem<Item> it : TOOLS.values()) e.accept(it.get());

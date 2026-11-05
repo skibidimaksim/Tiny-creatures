@@ -1,0 +1,13 @@
+{
+ "variants": {
+  "phase=0": {
+   "model": "wildkingdom:block/amber_mold_0"
+  },
+  "phase=1": {
+   "model": "wildkingdom:block/amber_mold_1"
+  },
+  "phase=2": {
+   "model": "wildkingdom:block/amber_mold_2"
+  }
+ }
+}

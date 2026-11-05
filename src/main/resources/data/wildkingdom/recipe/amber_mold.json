@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "G G",
+  "G G",
+  "III"
+ ],
+ "key": {
+  "G": "minecraft:glass",
+  "I": "minecraft:iron_ingot"
+ },
+ "result": {
+  "id": "wildkingdom:amber_mold",
+  "count": 1
+ }
+}
