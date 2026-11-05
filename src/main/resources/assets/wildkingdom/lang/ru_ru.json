@@ -88,5 +88,7 @@
  "entity.wildkingdom.telifon": "Телифон",
  "item.wildkingdom.telifon_spawn_egg": "Яйцо призыва: Телифон",
  "entity.wildkingdom.strashila": "Страшила невероятная",
- "item.wildkingdom.strashila_spawn_egg": "Яйцо призыва: Страшила невероятная"
+ "item.wildkingdom.strashila_spawn_egg": "Яйцо призыва: Страшила невероятная",
+ "entity.wildkingdom.ant": "Муравей",
+ "item.wildkingdom.ant_spawn_egg": "Яйцо призыва: Муравей"
 }

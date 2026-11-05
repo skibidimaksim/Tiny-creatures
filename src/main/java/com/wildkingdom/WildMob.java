@@ -1,6 +1,14 @@
 package com.wildkingdom;
 
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 import net.minecraft.core.Holder;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.ai.goal.Goal;
+import net.minecraft.world.phys.Vec3;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.damagesource.DamageSource;
@@ -56,6 +64,9 @@ public abstract class WildMob extends PathfinderMob implements GeoEntity {
         if (s.arch().equals("F")) {
             b.add(Attributes.FLYING_SPEED, s.fspd() > 0 ? s.fspd() : 0.5);
         }
+        if (s.ride()) {
+            b.add(Attributes.STEP_HEIGHT, 1.1);
+        }
         return b;
     }
 
@@ -66,6 +77,9 @@ public abstract class WildMob extends PathfinderMob implements GeoEntity {
             this.goalSelector.addGoal(1, new PanicGoal(this, 1.5));
         } else {
             this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.2, false));
+        }
+        if (!spec.prey().isEmpty()) {
+            this.goalSelector.addGoal(3, new HuntGoal(this, new HashSet<>(Arrays.asList(spec.prey().split(",")))));
         }
         addMoveGoals();
         this.goalSelector.addGoal(6, new LookAtPlayerGoal(this, Player.class, 8.0f));
@@ -97,12 +111,93 @@ public abstract class WildMob extends PathfinderMob implements GeoEntity {
         boolean hit = super.doHurtTarget(level, target);
         if (hit) {
             triggerAnim("Actions", "attack.swing");
+            if (target instanceof WildMob victim && !victim.isAlive()) {
+                this.heal(4.0f);
+            }
             if (spec.eff() != null && target instanceof LivingEntity le) {
                 String[] p = spec.eff().split(":");
                 le.addEffect(new MobEffectInstance(effect(p[0]), Integer.parseInt(p[1]), Integer.parseInt(p[2])));
             }
         }
         return hit;
+    }
+
+    /** Predators look for their prey species nearby and set it as the attack target. */
+    static final class HuntGoal extends Goal {
+        private final WildMob mob;
+        private final Set<String> prey;
+
+        HuntGoal(WildMob mob, Set<String> prey) {
+            this.mob = mob;
+            this.prey = prey;
+        }
+
+        @Override
+        public boolean canUse() {
+            if (mob.getTarget() != null || mob.getControllingPassenger() != null) return false;
+            if ((mob.tickCount + mob.getId()) % 20 != 0) return false;
+            List<WildMob> list = mob.level().getEntitiesOfClass(WildMob.class,
+                    mob.getBoundingBox().inflate(16.0, 6.0, 16.0),
+                    e -> e != mob && e.isAlive() && prey.contains(e.spec.id()));
+            WildMob best = null;
+            double bd = Double.MAX_VALUE;
+            for (WildMob e : list) {
+                double d = mob.distanceToSqr(e);
+                if (d < bd) {
+                    bd = d;
+                    best = e;
+                }
+            }
+            if (best != null) mob.setTarget(best);
+            return false;
+        }
+    }
+
+    // ---------- riding ----------
+    @Override
+    public LivingEntity getControllingPassenger() {
+        if (spec.ride() && this.getFirstPassenger() instanceof Player p) return p;
+        return null;
+    }
+
+    @Override
+    public InteractionResult mobInteract(Player player, InteractionHand hand) {
+        if (spec.ride() && !this.isVehicle() && !player.isShiftKeyDown() && player.getItemInHand(hand).isEmpty()) {
+            if (this.level() instanceof ServerLevel) {
+                player.startRiding(this);
+            }
+            return InteractionResult.SUCCESS;
+        }
+        return super.mobInteract(player, hand);
+    }
+
+    @Override
+    protected void serverAiStep() {
+        if (this.getControllingPassenger() != null) {
+            this.getNavigation().stop();
+            this.setTarget(null);
+            return;
+        }
+        super.serverAiStep();
+    }
+
+    @Override
+    public void travel(Vec3 travelVector) {
+        if (this.isAlive() && this.getControllingPassenger() instanceof Player p) {
+            this.setYRot(p.getYRot());
+            this.yRotO = this.getYRot();
+            this.setXRot(p.getXRot() * 0.5f);
+            this.setRot(this.getYRot(), this.getXRot());
+            this.yBodyRot = this.getYRot();
+            this.yHeadRot = this.getYRot();
+            float side = p.xxa * 0.5f;
+            float fwd = p.zza;
+            if (fwd <= 0.0f) fwd *= 0.25f;
+            this.setSpeed((float) this.getAttributeValue(Attributes.MOVEMENT_SPEED));
+            super.travel(new Vec3(side, travelVector.y, fwd));
+        } else {
+            super.travel(travelVector);
+        }
     }
 
     @Override

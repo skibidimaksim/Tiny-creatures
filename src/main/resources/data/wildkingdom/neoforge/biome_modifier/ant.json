@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/ant",
+ "spawners": {
+  "type": "wildkingdom:ant",
+  "weight": 14,
+  "minCount": 4,
+  "maxCount": 8
+ }
+}

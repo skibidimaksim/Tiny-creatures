@@ -1,6 +1,6 @@
 # Wild Kingdom
 
-NeoForge 1.21.11 + GeckoLib 5.4.3. 45 animated 3D animals with spawn eggs, natural spawning and drops.
+NeoForge 1.21.11 + GeckoLib 5.4.3. 46 animated 3D animals with spawn eggs, natural spawning and drops.
 
 - Gazelle / Газель
 - Bison / Бизон
@@ -47,3 +47,4 @@ NeoForge 1.21.11 + GeckoLib 5.4.3. 45 animated 3D animals with spawn eggs, natur
 - Fignya Moth / Фигня
 - Whip Scorpion / Телифон
 - Strashila / Страшила невероятная
+- Ant / Муравей

@@ -8,7 +8,7 @@ modId="wildkingdom"
 version="1.0.0"
 displayName="Wild Kingdom"
 authors="Maksim"
-description='''45 animated 3D animals and arthropods (GeckoLib): savanna giants, predators, birds, sea monsters, reptiles and real-life oddities. Spawn eggs, natural spawning, drops. English and Russian.'''
+description='''46 animated 3D animals and arthropods (GeckoLib): savanna giants, predators, birds, sea monsters, reptiles and real-life oddities. Spawn eggs, natural spawning, drops. English and Russian.'''
 [[dependencies.wildkingdom]]
 modId="neoforge"
 type="required"

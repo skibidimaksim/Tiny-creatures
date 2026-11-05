@@ -88,5 +88,7 @@
  "entity.wildkingdom.telifon": "Whip Scorpion",
  "item.wildkingdom.telifon_spawn_egg": "Whip Scorpion Spawn Egg",
  "entity.wildkingdom.strashila": "Strashila",
- "item.wildkingdom.strashila_spawn_egg": "Strashila Spawn Egg"
+ "item.wildkingdom.strashila_spawn_egg": "Strashila Spawn Egg",
+ "entity.wildkingdom.ant": "Ant",
+ "item.wildkingdom.ant_spawn_egg": "Ant Spawn Egg"
 }

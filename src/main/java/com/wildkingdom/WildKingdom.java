@@ -44,7 +44,9 @@ public final class WildKingdom {
             MobCategory cat = s.arch().equals("S") ? MobCategory.WATER_CREATURE : MobCategory.CREATURE;
             DeferredHolder<EntityType<?>, EntityType<WildMob>> holder = ENTITIES.<WildMob>registerEntityType(
                     s.id(), (t, l) -> make(t, l, s), cat,
-                    b -> b.sized(s.w(), s.h()).clientTrackingRange(8));
+                    b -> s.ride()
+                            ? b.sized(s.w(), s.h()).clientTrackingRange(8).passengerAttachments(s.h() * 0.72f)
+                            : b.sized(s.w(), s.h()).clientTrackingRange(8));
             TYPES.put(s.id(), holder);
             EGGS.add(ITEMS.registerItem(s.id() + "_spawn_egg",
                     props -> new SpawnEggItem(props.spawnEgg(holder.get()))));
