@@ -1,16 +1,6 @@
 {
  "model": {
   "type": "minecraft:model",
-  "model": "minecraft:item/template_spawn_egg",
-  "tints": [
-   {
-    "type": "minecraft:constant",
-    "value": 5528130
-   },
-   {
-    "type": "minecraft:constant",
-    "value": 12500640
-   }
-  ]
+  "model": "wildkingdom:item/catfish_spawn_egg"
  }
 }

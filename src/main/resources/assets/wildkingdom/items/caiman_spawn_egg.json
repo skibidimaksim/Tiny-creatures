@@ -1,16 +1,6 @@
 {
  "model": {
   "type": "minecraft:model",
-  "model": "minecraft:item/template_spawn_egg",
-  "tints": [
-   {
-    "type": "minecraft:constant",
-    "value": 5924920
-   },
-   {
-    "type": "minecraft:constant",
-    "value": 3292194
-   }
-  ]
+  "model": "wildkingdom:item/caiman_spawn_egg"
  }
 }

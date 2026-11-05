@@ -1,16 +1,6 @@
 {
  "model": {
   "type": "minecraft:model",
-  "model": "minecraft:item/template_spawn_egg",
-  "tints": [
-   {
-    "type": "minecraft:constant",
-    "value": 12887152
-   },
-   {
-    "type": "minecraft:constant",
-    "value": 6571048
-   }
-  ]
+  "model": "wildkingdom:item/fignya_spawn_egg"
  }
 }

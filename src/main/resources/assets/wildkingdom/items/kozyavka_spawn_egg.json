@@ -1,16 +1,6 @@
 {
  "model": {
   "type": "minecraft:model",
-  "model": "minecraft:item/template_spawn_egg",
-  "tints": [
-   {
-    "type": "minecraft:constant",
-    "value": 2659920
-   },
-   {
-    "type": "minecraft:constant",
-    "value": 14466620
-   }
-  ]
+  "model": "wildkingdom:item/kozyavka_spawn_egg"
  }
 }

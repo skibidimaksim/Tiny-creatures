@@ -1,16 +1,6 @@
 {
  "model": {
   "type": "minecraft:model",
-  "model": "minecraft:item/template_spawn_egg",
-  "tints": [
-   {
-    "type": "minecraft:constant",
-    "value": 5783084
-   },
-   {
-    "type": "minecraft:constant",
-    "value": 13482380
-   }
-  ]
+  "model": "wildkingdom:item/moose_spawn_egg"
  }
 }

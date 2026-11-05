@@ -1,0 +1,6 @@
+{
+ "parent": "minecraft:item/generated",
+ "textures": {
+  "layer0": "wildkingdom:item/tiger_spawn_egg"
+ }
+}

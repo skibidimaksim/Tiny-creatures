@@ -1,16 +1,6 @@
 {
  "model": {
   "type": "minecraft:model",
-  "model": "minecraft:item/template_spawn_egg",
-  "tints": [
-   {
-    "type": "minecraft:constant",
-    "value": 1841694
-   },
-   {
-    "type": "minecraft:constant",
-    "value": 15790320
-   }
-  ]
+  "model": "wildkingdom:item/skunk_spawn_egg"
  }
 }

@@ -1,0 +1,6 @@
+{
+ "parent": "minecraft:item/generated",
+ "textures": {
+  "layer0": "wildkingdom:item/orca_spawn_egg"
+ }
+}

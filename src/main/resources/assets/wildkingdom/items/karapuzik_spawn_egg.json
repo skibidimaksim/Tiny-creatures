@@ -1,16 +1,6 @@
 {
  "model": {
   "type": "minecraft:model",
-  "model": "minecraft:item/template_spawn_egg",
-  "tints": [
-   {
-    "type": "minecraft:constant",
-    "value": 1053208
-   },
-   {
-    "type": "minecraft:constant",
-    "value": 6252930
-   }
-  ]
+  "model": "wildkingdom:item/karapuzik_spawn_egg"
  }
 }

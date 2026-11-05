@@ -1,16 +1,6 @@
 {
  "model": {
   "type": "minecraft:model",
-  "model": "minecraft:item/template_spawn_egg",
-  "tints": [
-   {
-    "type": "minecraft:constant",
-    "value": 2659930
-   },
-   {
-    "type": "minecraft:constant",
-    "value": 14100540
-   }
-  ]
+  "model": "wildkingdom:item/hummingbird_spawn_egg"
  }
 }

@@ -1,16 +1,6 @@
 {
  "model": {
   "type": "minecraft:model",
-  "model": "minecraft:item/template_spawn_egg",
-  "tints": [
-   {
-    "type": "minecraft:constant",
-    "value": 12883554
-   },
-   {
-    "type": "minecraft:constant",
-    "value": 15788247
-   }
-  ]
+  "model": "wildkingdom:item/gazelle_spawn_egg"
  }
 }

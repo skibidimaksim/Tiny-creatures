@@ -1,0 +1,6 @@
+{
+ "parent": "minecraft:item/generated",
+ "textures": {
+  "layer0": "wildkingdom:item/car_cockroach_spawn_egg"
+ }
+}

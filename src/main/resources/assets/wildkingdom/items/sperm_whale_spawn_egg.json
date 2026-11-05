@@ -1,16 +1,6 @@
 {
  "model": {
   "type": "minecraft:model",
-  "model": "minecraft:item/template_spawn_egg",
-  "tints": [
-   {
-    "type": "minecraft:constant",
-    "value": 5659752
-   },
-   {
-    "type": "minecraft:constant",
-    "value": 12501965
-   }
-  ]
+  "model": "wildkingdom:item/sperm_whale_spawn_egg"
  }
 }

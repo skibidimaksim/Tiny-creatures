@@ -1,16 +1,6 @@
 {
  "model": {
   "type": "minecraft:model",
-  "model": "minecraft:item/template_spawn_egg",
-  "tints": [
-   {
-    "type": "minecraft:constant",
-    "value": 14996648
-   },
-   {
-    "type": "minecraft:constant",
-    "value": 16757800
-   }
-  ]
+  "model": "wildkingdom:item/car_cockroach_spawn_egg"
  }
 }
