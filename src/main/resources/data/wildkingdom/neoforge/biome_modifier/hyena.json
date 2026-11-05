@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/hyena",
+ "spawners": {
+  "type": "wildkingdom:hyena",
+  "weight": 6,
+  "minCount": 3,
+  "maxCount": 6
+ }
+}

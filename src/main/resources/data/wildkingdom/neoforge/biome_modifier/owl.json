@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/owl",
+ "spawners": {
+  "type": "wildkingdom:owl",
+  "weight": 6,
+  "minCount": 1,
+  "maxCount": 2
+ }
+}

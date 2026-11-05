@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/scorpion_emperor",
+ "spawners": {
+  "type": "wildkingdom:scorpion_emperor",
+  "weight": 1,
+  "minCount": 1,
+  "maxCount": 1
+ }
+}

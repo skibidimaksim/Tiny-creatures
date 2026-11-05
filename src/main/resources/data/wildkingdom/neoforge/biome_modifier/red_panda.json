@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/red_panda",
+ "spawners": {
+  "type": "wildkingdom:red_panda",
+  "weight": 8,
+  "minCount": 1,
+  "maxCount": 3
+ }
+}

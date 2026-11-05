@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/manta_ray",
+ "spawners": {
+  "type": "wildkingdom:manta_ray",
+  "weight": 6,
+  "minCount": 1,
+  "maxCount": 3
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/hippo",
+ "spawners": {
+  "type": "wildkingdom:hippo",
+  "weight": 5,
+  "minCount": 1,
+  "maxCount": 3
+ }
+}

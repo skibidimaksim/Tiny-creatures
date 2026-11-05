@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/flamingo",
+ "spawners": {
+  "type": "wildkingdom:flamingo",
+  "weight": 9,
+  "minCount": 3,
+  "maxCount": 8
+ }
+}

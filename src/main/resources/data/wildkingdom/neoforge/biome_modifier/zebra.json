@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/zebra",
+ "spawners": {
+  "type": "wildkingdom:zebra",
+  "weight": 9,
+  "minCount": 3,
+  "maxCount": 6
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/megalodon",
+ "spawners": {
+  "type": "wildkingdom:megalodon",
+  "weight": 1,
+  "minCount": 1,
+  "maxCount": 1
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/walrus",
+ "spawners": {
+  "type": "wildkingdom:walrus",
+  "weight": 5,
+  "minCount": 2,
+  "maxCount": 4
+ }
+}

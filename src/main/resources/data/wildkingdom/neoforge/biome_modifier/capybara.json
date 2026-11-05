@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/capybara",
+ "spawners": {
+  "type": "wildkingdom:capybara",
+  "weight": 9,
+  "minCount": 2,
+  "maxCount": 5
+ }
+}

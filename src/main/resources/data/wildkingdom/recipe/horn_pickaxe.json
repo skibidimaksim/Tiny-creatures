@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "equipment",
+ "pattern": [
+  "HHH",
+  " S ",
+  " S "
+ ],
+ "key": {
+  "H": "wildkingdom:beast_horn",
+  "S": "minecraft:stick"
+ },
+ "result": {
+  "id": "wildkingdom:horn_pickaxe",
+  "count": 1
+ }
+}

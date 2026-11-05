@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "equipment",
+ "pattern": [
+  "TT",
+  "TS",
+  " S"
+ ],
+ "key": {
+  "T": "wildkingdom:titan_scale",
+  "S": "minecraft:stick"
+ },
+ "result": {
+  "id": "wildkingdom:titan_axe",
+  "count": 1
+ }
+}

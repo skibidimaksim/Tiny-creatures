@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/narwhal",
+ "spawners": {
+  "type": "wildkingdom:narwhal",
+  "weight": 5,
+  "minCount": 1,
+  "maxCount": 3
+ }
+}

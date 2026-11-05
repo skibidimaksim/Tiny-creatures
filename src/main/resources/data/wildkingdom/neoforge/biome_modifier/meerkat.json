@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/meerkat",
+ "spawners": {
+  "type": "wildkingdom:meerkat",
+  "weight": 9,
+  "minCount": 3,
+  "maxCount": 6
+ }
+}

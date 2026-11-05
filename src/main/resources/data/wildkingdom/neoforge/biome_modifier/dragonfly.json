@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/dragonfly",
+ "spawners": {
+  "type": "wildkingdom:dragonfly",
+  "weight": 9,
+  "minCount": 2,
+  "maxCount": 5
+ }
+}

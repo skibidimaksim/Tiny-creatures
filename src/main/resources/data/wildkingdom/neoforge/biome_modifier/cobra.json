@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/cobra",
+ "spawners": {
+  "type": "wildkingdom:cobra",
+  "weight": 6,
+  "minCount": 1,
+  "maxCount": 2
+ }
+}

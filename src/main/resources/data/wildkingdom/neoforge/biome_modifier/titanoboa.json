@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/titanoboa",
+ "spawners": {
+  "type": "wildkingdom:titanoboa",
+  "weight": 1,
+  "minCount": 1,
+  "maxCount": 1
+ }
+}

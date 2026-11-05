@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/tarantula",
+ "spawners": {
+  "type": "wildkingdom:tarantula",
+  "weight": 6,
+  "minCount": 1,
+  "maxCount": 2
+ }
+}
