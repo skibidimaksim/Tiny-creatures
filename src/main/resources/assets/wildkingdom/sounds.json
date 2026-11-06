@@ -3,378 +3,702 @@
   "sounds": [
    "wildkingdom:mob/roar_ambient",
    "wildkingdom:mob/roar_ambient1",
-   "wildkingdom:mob/roar_ambient2"
+   "wildkingdom:mob/roar_ambient2",
+   "wildkingdom:mob/roar_ambient3",
+   "wildkingdom:mob/roar_ambient4",
+   "wildkingdom:mob/roar_ambient5",
+   "wildkingdom:mob/roar_ambient6",
+   "wildkingdom:mob/roar_ambient7",
+   "wildkingdom:mob/roar_ambient8"
   ]
  },
  "roar_hurt": {
   "sounds": [
    "wildkingdom:mob/roar_hurt",
    "wildkingdom:mob/roar_hurt1",
-   "wildkingdom:mob/roar_hurt2"
+   "wildkingdom:mob/roar_hurt2",
+   "wildkingdom:mob/roar_hurt3",
+   "wildkingdom:mob/roar_hurt4",
+   "wildkingdom:mob/roar_hurt5",
+   "wildkingdom:mob/roar_hurt6",
+   "wildkingdom:mob/roar_hurt7",
+   "wildkingdom:mob/roar_hurt8"
   ]
  },
  "roar_death": {
   "sounds": [
    "wildkingdom:mob/roar_death",
    "wildkingdom:mob/roar_death1",
-   "wildkingdom:mob/roar_death2"
+   "wildkingdom:mob/roar_death2",
+   "wildkingdom:mob/roar_death3",
+   "wildkingdom:mob/roar_death4",
+   "wildkingdom:mob/roar_death5",
+   "wildkingdom:mob/roar_death6",
+   "wildkingdom:mob/roar_death7",
+   "wildkingdom:mob/roar_death8"
   ]
  },
  "growl_ambient": {
   "sounds": [
    "wildkingdom:mob/growl_ambient",
    "wildkingdom:mob/growl_ambient1",
-   "wildkingdom:mob/growl_ambient2"
+   "wildkingdom:mob/growl_ambient2",
+   "wildkingdom:mob/growl_ambient3",
+   "wildkingdom:mob/growl_ambient4",
+   "wildkingdom:mob/growl_ambient5",
+   "wildkingdom:mob/growl_ambient6",
+   "wildkingdom:mob/growl_ambient7",
+   "wildkingdom:mob/growl_ambient8"
   ]
  },
  "growl_hurt": {
   "sounds": [
    "wildkingdom:mob/growl_hurt",
    "wildkingdom:mob/growl_hurt1",
-   "wildkingdom:mob/growl_hurt2"
+   "wildkingdom:mob/growl_hurt2",
+   "wildkingdom:mob/growl_hurt3",
+   "wildkingdom:mob/growl_hurt4",
+   "wildkingdom:mob/growl_hurt5",
+   "wildkingdom:mob/growl_hurt6",
+   "wildkingdom:mob/growl_hurt7",
+   "wildkingdom:mob/growl_hurt8"
   ]
  },
  "growl_death": {
   "sounds": [
    "wildkingdom:mob/growl_death",
    "wildkingdom:mob/growl_death1",
-   "wildkingdom:mob/growl_death2"
+   "wildkingdom:mob/growl_death2",
+   "wildkingdom:mob/growl_death3",
+   "wildkingdom:mob/growl_death4",
+   "wildkingdom:mob/growl_death5",
+   "wildkingdom:mob/growl_death6",
+   "wildkingdom:mob/growl_death7",
+   "wildkingdom:mob/growl_death8"
   ]
  },
  "trumpet_ambient": {
   "sounds": [
    "wildkingdom:mob/trumpet_ambient",
    "wildkingdom:mob/trumpet_ambient1",
-   "wildkingdom:mob/trumpet_ambient2"
+   "wildkingdom:mob/trumpet_ambient2",
+   "wildkingdom:mob/trumpet_ambient3",
+   "wildkingdom:mob/trumpet_ambient4",
+   "wildkingdom:mob/trumpet_ambient5",
+   "wildkingdom:mob/trumpet_ambient6",
+   "wildkingdom:mob/trumpet_ambient7",
+   "wildkingdom:mob/trumpet_ambient8"
   ]
  },
  "trumpet_hurt": {
   "sounds": [
    "wildkingdom:mob/trumpet_hurt",
    "wildkingdom:mob/trumpet_hurt1",
-   "wildkingdom:mob/trumpet_hurt2"
+   "wildkingdom:mob/trumpet_hurt2",
+   "wildkingdom:mob/trumpet_hurt3",
+   "wildkingdom:mob/trumpet_hurt4",
+   "wildkingdom:mob/trumpet_hurt5",
+   "wildkingdom:mob/trumpet_hurt6",
+   "wildkingdom:mob/trumpet_hurt7",
+   "wildkingdom:mob/trumpet_hurt8"
   ]
  },
  "trumpet_death": {
   "sounds": [
    "wildkingdom:mob/trumpet_death",
    "wildkingdom:mob/trumpet_death1",
-   "wildkingdom:mob/trumpet_death2"
+   "wildkingdom:mob/trumpet_death2",
+   "wildkingdom:mob/trumpet_death3",
+   "wildkingdom:mob/trumpet_death4",
+   "wildkingdom:mob/trumpet_death5",
+   "wildkingdom:mob/trumpet_death6",
+   "wildkingdom:mob/trumpet_death7",
+   "wildkingdom:mob/trumpet_death8"
   ]
  },
  "bellow_ambient": {
   "sounds": [
    "wildkingdom:mob/bellow_ambient",
    "wildkingdom:mob/bellow_ambient1",
-   "wildkingdom:mob/bellow_ambient2"
+   "wildkingdom:mob/bellow_ambient2",
+   "wildkingdom:mob/bellow_ambient3",
+   "wildkingdom:mob/bellow_ambient4",
+   "wildkingdom:mob/bellow_ambient5",
+   "wildkingdom:mob/bellow_ambient6",
+   "wildkingdom:mob/bellow_ambient7",
+   "wildkingdom:mob/bellow_ambient8"
   ]
  },
  "bellow_hurt": {
   "sounds": [
    "wildkingdom:mob/bellow_hurt",
    "wildkingdom:mob/bellow_hurt1",
-   "wildkingdom:mob/bellow_hurt2"
+   "wildkingdom:mob/bellow_hurt2",
+   "wildkingdom:mob/bellow_hurt3",
+   "wildkingdom:mob/bellow_hurt4",
+   "wildkingdom:mob/bellow_hurt5",
+   "wildkingdom:mob/bellow_hurt6",
+   "wildkingdom:mob/bellow_hurt7",
+   "wildkingdom:mob/bellow_hurt8"
   ]
  },
  "bellow_death": {
   "sounds": [
    "wildkingdom:mob/bellow_death",
    "wildkingdom:mob/bellow_death1",
-   "wildkingdom:mob/bellow_death2"
+   "wildkingdom:mob/bellow_death2",
+   "wildkingdom:mob/bellow_death3",
+   "wildkingdom:mob/bellow_death4",
+   "wildkingdom:mob/bellow_death5",
+   "wildkingdom:mob/bellow_death6",
+   "wildkingdom:mob/bellow_death7",
+   "wildkingdom:mob/bellow_death8"
   ]
  },
  "neigh_ambient": {
   "sounds": [
    "wildkingdom:mob/neigh_ambient",
    "wildkingdom:mob/neigh_ambient1",
-   "wildkingdom:mob/neigh_ambient2"
+   "wildkingdom:mob/neigh_ambient2",
+   "wildkingdom:mob/neigh_ambient3",
+   "wildkingdom:mob/neigh_ambient4",
+   "wildkingdom:mob/neigh_ambient5",
+   "wildkingdom:mob/neigh_ambient6",
+   "wildkingdom:mob/neigh_ambient7",
+   "wildkingdom:mob/neigh_ambient8"
   ]
  },
  "neigh_hurt": {
   "sounds": [
    "wildkingdom:mob/neigh_hurt",
    "wildkingdom:mob/neigh_hurt1",
-   "wildkingdom:mob/neigh_hurt2"
+   "wildkingdom:mob/neigh_hurt2",
+   "wildkingdom:mob/neigh_hurt3",
+   "wildkingdom:mob/neigh_hurt4",
+   "wildkingdom:mob/neigh_hurt5",
+   "wildkingdom:mob/neigh_hurt6",
+   "wildkingdom:mob/neigh_hurt7",
+   "wildkingdom:mob/neigh_hurt8"
   ]
  },
  "neigh_death": {
   "sounds": [
    "wildkingdom:mob/neigh_death",
    "wildkingdom:mob/neigh_death1",
-   "wildkingdom:mob/neigh_death2"
+   "wildkingdom:mob/neigh_death2",
+   "wildkingdom:mob/neigh_death3",
+   "wildkingdom:mob/neigh_death4",
+   "wildkingdom:mob/neigh_death5",
+   "wildkingdom:mob/neigh_death6",
+   "wildkingdom:mob/neigh_death7",
+   "wildkingdom:mob/neigh_death8"
   ]
  },
  "squeak_ambient": {
   "sounds": [
    "wildkingdom:mob/squeak_ambient",
    "wildkingdom:mob/squeak_ambient1",
-   "wildkingdom:mob/squeak_ambient2"
+   "wildkingdom:mob/squeak_ambient2",
+   "wildkingdom:mob/squeak_ambient3",
+   "wildkingdom:mob/squeak_ambient4",
+   "wildkingdom:mob/squeak_ambient5",
+   "wildkingdom:mob/squeak_ambient6",
+   "wildkingdom:mob/squeak_ambient7",
+   "wildkingdom:mob/squeak_ambient8"
   ]
  },
  "squeak_hurt": {
   "sounds": [
    "wildkingdom:mob/squeak_hurt",
    "wildkingdom:mob/squeak_hurt1",
-   "wildkingdom:mob/squeak_hurt2"
+   "wildkingdom:mob/squeak_hurt2",
+   "wildkingdom:mob/squeak_hurt3",
+   "wildkingdom:mob/squeak_hurt4",
+   "wildkingdom:mob/squeak_hurt5",
+   "wildkingdom:mob/squeak_hurt6",
+   "wildkingdom:mob/squeak_hurt7",
+   "wildkingdom:mob/squeak_hurt8"
   ]
  },
  "squeak_death": {
   "sounds": [
    "wildkingdom:mob/squeak_death",
    "wildkingdom:mob/squeak_death1",
-   "wildkingdom:mob/squeak_death2"
+   "wildkingdom:mob/squeak_death2",
+   "wildkingdom:mob/squeak_death3",
+   "wildkingdom:mob/squeak_death4",
+   "wildkingdom:mob/squeak_death5",
+   "wildkingdom:mob/squeak_death6",
+   "wildkingdom:mob/squeak_death7",
+   "wildkingdom:mob/squeak_death8"
   ]
  },
  "bark_ambient": {
   "sounds": [
    "wildkingdom:mob/bark_ambient",
    "wildkingdom:mob/bark_ambient1",
-   "wildkingdom:mob/bark_ambient2"
+   "wildkingdom:mob/bark_ambient2",
+   "wildkingdom:mob/bark_ambient3",
+   "wildkingdom:mob/bark_ambient4",
+   "wildkingdom:mob/bark_ambient5",
+   "wildkingdom:mob/bark_ambient6",
+   "wildkingdom:mob/bark_ambient7",
+   "wildkingdom:mob/bark_ambient8"
   ]
  },
  "bark_hurt": {
   "sounds": [
    "wildkingdom:mob/bark_hurt",
    "wildkingdom:mob/bark_hurt1",
-   "wildkingdom:mob/bark_hurt2"
+   "wildkingdom:mob/bark_hurt2",
+   "wildkingdom:mob/bark_hurt3",
+   "wildkingdom:mob/bark_hurt4",
+   "wildkingdom:mob/bark_hurt5",
+   "wildkingdom:mob/bark_hurt6",
+   "wildkingdom:mob/bark_hurt7",
+   "wildkingdom:mob/bark_hurt8"
   ]
  },
  "bark_death": {
   "sounds": [
    "wildkingdom:mob/bark_death",
    "wildkingdom:mob/bark_death1",
-   "wildkingdom:mob/bark_death2"
+   "wildkingdom:mob/bark_death2",
+   "wildkingdom:mob/bark_death3",
+   "wildkingdom:mob/bark_death4",
+   "wildkingdom:mob/bark_death5",
+   "wildkingdom:mob/bark_death6",
+   "wildkingdom:mob/bark_death7",
+   "wildkingdom:mob/bark_death8"
   ]
  },
  "caw_ambient": {
   "sounds": [
    "wildkingdom:mob/caw_ambient",
    "wildkingdom:mob/caw_ambient1",
-   "wildkingdom:mob/caw_ambient2"
+   "wildkingdom:mob/caw_ambient2",
+   "wildkingdom:mob/caw_ambient3",
+   "wildkingdom:mob/caw_ambient4",
+   "wildkingdom:mob/caw_ambient5",
+   "wildkingdom:mob/caw_ambient6",
+   "wildkingdom:mob/caw_ambient7",
+   "wildkingdom:mob/caw_ambient8"
   ]
  },
  "caw_hurt": {
   "sounds": [
    "wildkingdom:mob/caw_hurt",
    "wildkingdom:mob/caw_hurt1",
-   "wildkingdom:mob/caw_hurt2"
+   "wildkingdom:mob/caw_hurt2",
+   "wildkingdom:mob/caw_hurt3",
+   "wildkingdom:mob/caw_hurt4",
+   "wildkingdom:mob/caw_hurt5",
+   "wildkingdom:mob/caw_hurt6",
+   "wildkingdom:mob/caw_hurt7",
+   "wildkingdom:mob/caw_hurt8"
   ]
  },
  "caw_death": {
   "sounds": [
    "wildkingdom:mob/caw_death",
    "wildkingdom:mob/caw_death1",
-   "wildkingdom:mob/caw_death2"
+   "wildkingdom:mob/caw_death2",
+   "wildkingdom:mob/caw_death3",
+   "wildkingdom:mob/caw_death4",
+   "wildkingdom:mob/caw_death5",
+   "wildkingdom:mob/caw_death6",
+   "wildkingdom:mob/caw_death7",
+   "wildkingdom:mob/caw_death8"
   ]
  },
  "chirp_ambient": {
   "sounds": [
    "wildkingdom:mob/chirp_ambient",
    "wildkingdom:mob/chirp_ambient1",
-   "wildkingdom:mob/chirp_ambient2"
+   "wildkingdom:mob/chirp_ambient2",
+   "wildkingdom:mob/chirp_ambient3",
+   "wildkingdom:mob/chirp_ambient4",
+   "wildkingdom:mob/chirp_ambient5",
+   "wildkingdom:mob/chirp_ambient6",
+   "wildkingdom:mob/chirp_ambient7",
+   "wildkingdom:mob/chirp_ambient8"
   ]
  },
  "chirp_hurt": {
   "sounds": [
    "wildkingdom:mob/chirp_hurt",
    "wildkingdom:mob/chirp_hurt1",
-   "wildkingdom:mob/chirp_hurt2"
+   "wildkingdom:mob/chirp_hurt2",
+   "wildkingdom:mob/chirp_hurt3",
+   "wildkingdom:mob/chirp_hurt4",
+   "wildkingdom:mob/chirp_hurt5",
+   "wildkingdom:mob/chirp_hurt6",
+   "wildkingdom:mob/chirp_hurt7",
+   "wildkingdom:mob/chirp_hurt8"
   ]
  },
  "chirp_death": {
   "sounds": [
    "wildkingdom:mob/chirp_death",
    "wildkingdom:mob/chirp_death1",
-   "wildkingdom:mob/chirp_death2"
+   "wildkingdom:mob/chirp_death2",
+   "wildkingdom:mob/chirp_death3",
+   "wildkingdom:mob/chirp_death4",
+   "wildkingdom:mob/chirp_death5",
+   "wildkingdom:mob/chirp_death6",
+   "wildkingdom:mob/chirp_death7",
+   "wildkingdom:mob/chirp_death8"
   ]
  },
  "screech_ambient": {
   "sounds": [
    "wildkingdom:mob/screech_ambient",
    "wildkingdom:mob/screech_ambient1",
-   "wildkingdom:mob/screech_ambient2"
+   "wildkingdom:mob/screech_ambient2",
+   "wildkingdom:mob/screech_ambient3",
+   "wildkingdom:mob/screech_ambient4",
+   "wildkingdom:mob/screech_ambient5",
+   "wildkingdom:mob/screech_ambient6",
+   "wildkingdom:mob/screech_ambient7",
+   "wildkingdom:mob/screech_ambient8"
   ]
  },
  "screech_hurt": {
   "sounds": [
    "wildkingdom:mob/screech_hurt",
    "wildkingdom:mob/screech_hurt1",
-   "wildkingdom:mob/screech_hurt2"
+   "wildkingdom:mob/screech_hurt2",
+   "wildkingdom:mob/screech_hurt3",
+   "wildkingdom:mob/screech_hurt4",
+   "wildkingdom:mob/screech_hurt5",
+   "wildkingdom:mob/screech_hurt6",
+   "wildkingdom:mob/screech_hurt7",
+   "wildkingdom:mob/screech_hurt8"
   ]
  },
  "screech_death": {
   "sounds": [
    "wildkingdom:mob/screech_death",
    "wildkingdom:mob/screech_death1",
-   "wildkingdom:mob/screech_death2"
+   "wildkingdom:mob/screech_death2",
+   "wildkingdom:mob/screech_death3",
+   "wildkingdom:mob/screech_death4",
+   "wildkingdom:mob/screech_death5",
+   "wildkingdom:mob/screech_death6",
+   "wildkingdom:mob/screech_death7",
+   "wildkingdom:mob/screech_death8"
   ]
  },
  "hoot_ambient": {
   "sounds": [
    "wildkingdom:mob/hoot_ambient",
    "wildkingdom:mob/hoot_ambient1",
-   "wildkingdom:mob/hoot_ambient2"
+   "wildkingdom:mob/hoot_ambient2",
+   "wildkingdom:mob/hoot_ambient3",
+   "wildkingdom:mob/hoot_ambient4",
+   "wildkingdom:mob/hoot_ambient5",
+   "wildkingdom:mob/hoot_ambient6",
+   "wildkingdom:mob/hoot_ambient7",
+   "wildkingdom:mob/hoot_ambient8"
   ]
  },
  "hoot_hurt": {
   "sounds": [
    "wildkingdom:mob/hoot_hurt",
    "wildkingdom:mob/hoot_hurt1",
-   "wildkingdom:mob/hoot_hurt2"
+   "wildkingdom:mob/hoot_hurt2",
+   "wildkingdom:mob/hoot_hurt3",
+   "wildkingdom:mob/hoot_hurt4",
+   "wildkingdom:mob/hoot_hurt5",
+   "wildkingdom:mob/hoot_hurt6",
+   "wildkingdom:mob/hoot_hurt7",
+   "wildkingdom:mob/hoot_hurt8"
   ]
  },
  "hoot_death": {
   "sounds": [
    "wildkingdom:mob/hoot_death",
    "wildkingdom:mob/hoot_death1",
-   "wildkingdom:mob/hoot_death2"
+   "wildkingdom:mob/hoot_death2",
+   "wildkingdom:mob/hoot_death3",
+   "wildkingdom:mob/hoot_death4",
+   "wildkingdom:mob/hoot_death5",
+   "wildkingdom:mob/hoot_death6",
+   "wildkingdom:mob/hoot_death7",
+   "wildkingdom:mob/hoot_death8"
   ]
  },
  "honk_ambient": {
   "sounds": [
    "wildkingdom:mob/honk_ambient",
    "wildkingdom:mob/honk_ambient1",
-   "wildkingdom:mob/honk_ambient2"
+   "wildkingdom:mob/honk_ambient2",
+   "wildkingdom:mob/honk_ambient3",
+   "wildkingdom:mob/honk_ambient4",
+   "wildkingdom:mob/honk_ambient5",
+   "wildkingdom:mob/honk_ambient6",
+   "wildkingdom:mob/honk_ambient7",
+   "wildkingdom:mob/honk_ambient8"
   ]
  },
  "honk_hurt": {
   "sounds": [
    "wildkingdom:mob/honk_hurt",
    "wildkingdom:mob/honk_hurt1",
-   "wildkingdom:mob/honk_hurt2"
+   "wildkingdom:mob/honk_hurt2",
+   "wildkingdom:mob/honk_hurt3",
+   "wildkingdom:mob/honk_hurt4",
+   "wildkingdom:mob/honk_hurt5",
+   "wildkingdom:mob/honk_hurt6",
+   "wildkingdom:mob/honk_hurt7",
+   "wildkingdom:mob/honk_hurt8"
   ]
  },
  "honk_death": {
   "sounds": [
    "wildkingdom:mob/honk_death",
    "wildkingdom:mob/honk_death1",
-   "wildkingdom:mob/honk_death2"
+   "wildkingdom:mob/honk_death2",
+   "wildkingdom:mob/honk_death3",
+   "wildkingdom:mob/honk_death4",
+   "wildkingdom:mob/honk_death5",
+   "wildkingdom:mob/honk_death6",
+   "wildkingdom:mob/honk_death7",
+   "wildkingdom:mob/honk_death8"
   ]
  },
  "hiss_ambient": {
   "sounds": [
    "wildkingdom:mob/hiss_ambient",
    "wildkingdom:mob/hiss_ambient1",
-   "wildkingdom:mob/hiss_ambient2"
+   "wildkingdom:mob/hiss_ambient2",
+   "wildkingdom:mob/hiss_ambient3",
+   "wildkingdom:mob/hiss_ambient4",
+   "wildkingdom:mob/hiss_ambient5",
+   "wildkingdom:mob/hiss_ambient6",
+   "wildkingdom:mob/hiss_ambient7",
+   "wildkingdom:mob/hiss_ambient8"
   ]
  },
  "hiss_hurt": {
   "sounds": [
    "wildkingdom:mob/hiss_hurt",
    "wildkingdom:mob/hiss_hurt1",
-   "wildkingdom:mob/hiss_hurt2"
+   "wildkingdom:mob/hiss_hurt2",
+   "wildkingdom:mob/hiss_hurt3",
+   "wildkingdom:mob/hiss_hurt4",
+   "wildkingdom:mob/hiss_hurt5",
+   "wildkingdom:mob/hiss_hurt6",
+   "wildkingdom:mob/hiss_hurt7",
+   "wildkingdom:mob/hiss_hurt8"
   ]
  },
  "hiss_death": {
   "sounds": [
    "wildkingdom:mob/hiss_death",
    "wildkingdom:mob/hiss_death1",
-   "wildkingdom:mob/hiss_death2"
+   "wildkingdom:mob/hiss_death2",
+   "wildkingdom:mob/hiss_death3",
+   "wildkingdom:mob/hiss_death4",
+   "wildkingdom:mob/hiss_death5",
+   "wildkingdom:mob/hiss_death6",
+   "wildkingdom:mob/hiss_death7",
+   "wildkingdom:mob/hiss_death8"
   ]
  },
  "click_ambient": {
   "sounds": [
    "wildkingdom:mob/click_ambient",
    "wildkingdom:mob/click_ambient1",
-   "wildkingdom:mob/click_ambient2"
+   "wildkingdom:mob/click_ambient2",
+   "wildkingdom:mob/click_ambient3",
+   "wildkingdom:mob/click_ambient4",
+   "wildkingdom:mob/click_ambient5",
+   "wildkingdom:mob/click_ambient6",
+   "wildkingdom:mob/click_ambient7",
+   "wildkingdom:mob/click_ambient8"
   ]
  },
  "click_hurt": {
   "sounds": [
    "wildkingdom:mob/click_hurt",
    "wildkingdom:mob/click_hurt1",
-   "wildkingdom:mob/click_hurt2"
+   "wildkingdom:mob/click_hurt2",
+   "wildkingdom:mob/click_hurt3",
+   "wildkingdom:mob/click_hurt4",
+   "wildkingdom:mob/click_hurt5",
+   "wildkingdom:mob/click_hurt6",
+   "wildkingdom:mob/click_hurt7",
+   "wildkingdom:mob/click_hurt8"
   ]
  },
  "click_death": {
   "sounds": [
    "wildkingdom:mob/click_death",
    "wildkingdom:mob/click_death1",
-   "wildkingdom:mob/click_death2"
+   "wildkingdom:mob/click_death2",
+   "wildkingdom:mob/click_death3",
+   "wildkingdom:mob/click_death4",
+   "wildkingdom:mob/click_death5",
+   "wildkingdom:mob/click_death6",
+   "wildkingdom:mob/click_death7",
+   "wildkingdom:mob/click_death8"
   ]
  },
  "buzz_ambient": {
   "sounds": [
    "wildkingdom:mob/buzz_ambient",
    "wildkingdom:mob/buzz_ambient1",
-   "wildkingdom:mob/buzz_ambient2"
+   "wildkingdom:mob/buzz_ambient2",
+   "wildkingdom:mob/buzz_ambient3",
+   "wildkingdom:mob/buzz_ambient4",
+   "wildkingdom:mob/buzz_ambient5",
+   "wildkingdom:mob/buzz_ambient6",
+   "wildkingdom:mob/buzz_ambient7",
+   "wildkingdom:mob/buzz_ambient8"
   ]
  },
  "buzz_hurt": {
   "sounds": [
    "wildkingdom:mob/buzz_hurt",
    "wildkingdom:mob/buzz_hurt1",
-   "wildkingdom:mob/buzz_hurt2"
+   "wildkingdom:mob/buzz_hurt2",
+   "wildkingdom:mob/buzz_hurt3",
+   "wildkingdom:mob/buzz_hurt4",
+   "wildkingdom:mob/buzz_hurt5",
+   "wildkingdom:mob/buzz_hurt6",
+   "wildkingdom:mob/buzz_hurt7",
+   "wildkingdom:mob/buzz_hurt8"
   ]
  },
  "buzz_death": {
   "sounds": [
    "wildkingdom:mob/buzz_death",
    "wildkingdom:mob/buzz_death1",
-   "wildkingdom:mob/buzz_death2"
+   "wildkingdom:mob/buzz_death2",
+   "wildkingdom:mob/buzz_death3",
+   "wildkingdom:mob/buzz_death4",
+   "wildkingdom:mob/buzz_death5",
+   "wildkingdom:mob/buzz_death6",
+   "wildkingdom:mob/buzz_death7",
+   "wildkingdom:mob/buzz_death8"
   ]
  },
  "whale_ambient": {
   "sounds": [
    "wildkingdom:mob/whale_ambient",
    "wildkingdom:mob/whale_ambient1",
-   "wildkingdom:mob/whale_ambient2"
+   "wildkingdom:mob/whale_ambient2",
+   "wildkingdom:mob/whale_ambient3",
+   "wildkingdom:mob/whale_ambient4",
+   "wildkingdom:mob/whale_ambient5",
+   "wildkingdom:mob/whale_ambient6",
+   "wildkingdom:mob/whale_ambient7",
+   "wildkingdom:mob/whale_ambient8"
   ]
  },
  "whale_hurt": {
   "sounds": [
    "wildkingdom:mob/whale_hurt",
    "wildkingdom:mob/whale_hurt1",
-   "wildkingdom:mob/whale_hurt2"
+   "wildkingdom:mob/whale_hurt2",
+   "wildkingdom:mob/whale_hurt3",
+   "wildkingdom:mob/whale_hurt4",
+   "wildkingdom:mob/whale_hurt5",
+   "wildkingdom:mob/whale_hurt6",
+   "wildkingdom:mob/whale_hurt7",
+   "wildkingdom:mob/whale_hurt8"
   ]
  },
  "whale_death": {
   "sounds": [
    "wildkingdom:mob/whale_death",
    "wildkingdom:mob/whale_death1",
-   "wildkingdom:mob/whale_death2"
+   "wildkingdom:mob/whale_death2",
+   "wildkingdom:mob/whale_death3",
+   "wildkingdom:mob/whale_death4",
+   "wildkingdom:mob/whale_death5",
+   "wildkingdom:mob/whale_death6",
+   "wildkingdom:mob/whale_death7",
+   "wildkingdom:mob/whale_death8"
   ]
  },
  "whistle_ambient": {
   "sounds": [
    "wildkingdom:mob/whistle_ambient",
    "wildkingdom:mob/whistle_ambient1",
-   "wildkingdom:mob/whistle_ambient2"
+   "wildkingdom:mob/whistle_ambient2",
+   "wildkingdom:mob/whistle_ambient3",
+   "wildkingdom:mob/whistle_ambient4",
+   "wildkingdom:mob/whistle_ambient5",
+   "wildkingdom:mob/whistle_ambient6",
+   "wildkingdom:mob/whistle_ambient7",
+   "wildkingdom:mob/whistle_ambient8"
   ]
  },
  "whistle_hurt": {
   "sounds": [
    "wildkingdom:mob/whistle_hurt",
    "wildkingdom:mob/whistle_hurt1",
-   "wildkingdom:mob/whistle_hurt2"
+   "wildkingdom:mob/whistle_hurt2",
+   "wildkingdom:mob/whistle_hurt3",
+   "wildkingdom:mob/whistle_hurt4",
+   "wildkingdom:mob/whistle_hurt5",
+   "wildkingdom:mob/whistle_hurt6",
+   "wildkingdom:mob/whistle_hurt7",
+   "wildkingdom:mob/whistle_hurt8"
   ]
  },
  "whistle_death": {
   "sounds": [
    "wildkingdom:mob/whistle_death",
    "wildkingdom:mob/whistle_death1",
-   "wildkingdom:mob/whistle_death2"
+   "wildkingdom:mob/whistle_death2",
+   "wildkingdom:mob/whistle_death3",
+   "wildkingdom:mob/whistle_death4",
+   "wildkingdom:mob/whistle_death5",
+   "wildkingdom:mob/whistle_death6",
+   "wildkingdom:mob/whistle_death7",
+   "wildkingdom:mob/whistle_death8"
   ]
  },
  "splash_ambient": {
   "sounds": [
    "wildkingdom:mob/splash_ambient",
    "wildkingdom:mob/splash_ambient1",
-   "wildkingdom:mob/splash_ambient2"
+   "wildkingdom:mob/splash_ambient2",
+   "wildkingdom:mob/splash_ambient3",
+   "wildkingdom:mob/splash_ambient4",
+   "wildkingdom:mob/splash_ambient5",
+   "wildkingdom:mob/splash_ambient6",
+   "wildkingdom:mob/splash_ambient7",
+   "wildkingdom:mob/splash_ambient8"
   ]
  },
  "splash_hurt": {
   "sounds": [
    "wildkingdom:mob/splash_hurt",
    "wildkingdom:mob/splash_hurt1",
-   "wildkingdom:mob/splash_hurt2"
+   "wildkingdom:mob/splash_hurt2",
+   "wildkingdom:mob/splash_hurt3",
+   "wildkingdom:mob/splash_hurt4",
+   "wildkingdom:mob/splash_hurt5",
+   "wildkingdom:mob/splash_hurt6",
+   "wildkingdom:mob/splash_hurt7",
+   "wildkingdom:mob/splash_hurt8"
   ]
  },
  "splash_death": {
   "sounds": [
    "wildkingdom:mob/splash_death",
    "wildkingdom:mob/splash_death1",
-   "wildkingdom:mob/splash_death2"
+   "wildkingdom:mob/splash_death2",
+   "wildkingdom:mob/splash_death3",
+   "wildkingdom:mob/splash_death4",
+   "wildkingdom:mob/splash_death5",
+   "wildkingdom:mob/splash_death6",
+   "wildkingdom:mob/splash_death7",
+   "wildkingdom:mob/splash_death8"
   ]
  }
 }
