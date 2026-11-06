@@ -88,6 +88,7 @@ public final class WildKingdom {
         ITEMS.register(modBus);
         Sounds.REG.register(modBus);
         Resin.init(modBus);
+        Armor.init(modBus);
         ENTITIES.register(modBus);
         modBus.addListener(WildKingdom::attributes);
         modBus.addListener(WildKingdom::spawnPlacements);
@@ -134,6 +135,7 @@ public final class WildKingdom {
         }
         if (e.getTabKey() == CreativeModeTabs.COMBAT) {
             for (DeferredItem<Item> it : TOOLS.values()) e.accept(it.get());
+            for (DeferredItem<Item> it : Armor.PIECES.values()) e.accept(it.get());
         }
     }
 }

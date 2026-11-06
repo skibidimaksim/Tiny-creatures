@@ -1,0 +1,14 @@
+{
+ "layers": {
+  "humanoid": [
+   {
+    "texture": "wildkingdom:hide"
+   }
+  ],
+  "humanoid_leggings": [
+   {
+    "texture": "wildkingdom:hide"
+   }
+  ]
+ }
+}

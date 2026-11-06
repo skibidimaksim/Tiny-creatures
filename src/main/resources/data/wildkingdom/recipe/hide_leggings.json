@@ -1,0 +1,16 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "equipment",
+ "pattern": [
+  "XXX",
+  "X X",
+  "X X"
+ ],
+ "key": {
+  "X": "wildkingdom:thick_hide"
+ },
+ "result": {
+  "id": "wildkingdom:hide_leggings",
+  "count": 1
+ }
+}

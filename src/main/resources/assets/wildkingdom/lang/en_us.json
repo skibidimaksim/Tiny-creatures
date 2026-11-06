@@ -195,5 +195,9 @@
  "item.wildkingdom.titan_helmet": "Titan Helmet",
  "item.wildkingdom.titan_chestplate": "Titan Chestplate",
  "item.wildkingdom.titan_leggings": "Titan Leggings",
- "item.wildkingdom.titan_boots": "Titan Boots"
+ "item.wildkingdom.titan_boots": "Titan Boots",
+ "item.wildkingdom.hide_helmet": "Hide Helmet",
+ "item.wildkingdom.hide_chestplate": "Hide Chestplate",
+ "item.wildkingdom.hide_leggings": "Hide Leggings",
+ "item.wildkingdom.hide_boots": "Hide Boots"
 }
