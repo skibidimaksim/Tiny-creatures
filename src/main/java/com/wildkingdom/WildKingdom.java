@@ -43,13 +43,13 @@ public final class WildKingdom {
                 "chitin_shard", "megalodon_tooth", "titan_scale", "emperor_stinger"}) {
             MATS.put(n, ITEMS.registerSimpleItem(n));
         }
-        TOOLS.put("claw_blade", ITEMS.registerItem("claw_blade", Item::new, new Item.Properties().sword(ToolMaterial.IRON, 3.0f, -2.2f)));
-        TOOLS.put("fang_blade", ITEMS.registerItem("fang_blade", Item::new, new Item.Properties().sword(ToolMaterial.DIAMOND, 3.0f, -2.4f)));
-        TOOLS.put("ivory_axe", ITEMS.registerItem("ivory_axe", Item::new, new Item.Properties().axe(ToolMaterial.DIAMOND, 5.0f, -3.0f)));
-        TOOLS.put("horn_pickaxe", ITEMS.registerItem("horn_pickaxe", Item::new, new Item.Properties().pickaxe(ToolMaterial.IRON, 1.0f, -2.8f)));
-        TOOLS.put("megalodon_blade", ITEMS.registerItem("megalodon_blade", Item::new, new Item.Properties().sword(ToolMaterial.NETHERITE, 5.0f, -2.2f)));
-        TOOLS.put("titan_axe", ITEMS.registerItem("titan_axe", Item::new, new Item.Properties().axe(ToolMaterial.NETHERITE, 6.0f, -3.0f)));
-        TOOLS.put("emperor_blade", ITEMS.registerItem("emperor_blade", Item::new, new Item.Properties().sword(ToolMaterial.NETHERITE, 6.0f, -2.0f)));
+        TOOLS.put("claw_blade", ITEMS.registerItem("claw_blade", Item::new, () -> new Item.Properties().sword(ToolMaterial.IRON, 3.0f, -2.2f)));
+        TOOLS.put("fang_blade", ITEMS.registerItem("fang_blade", Item::new, () -> new Item.Properties().sword(ToolMaterial.DIAMOND, 3.0f, -2.4f)));
+        TOOLS.put("ivory_axe", ITEMS.registerItem("ivory_axe", Item::new, () -> new Item.Properties().axe(ToolMaterial.DIAMOND, 5.0f, -3.0f)));
+        TOOLS.put("horn_pickaxe", ITEMS.registerItem("horn_pickaxe", Item::new, () -> new Item.Properties().pickaxe(ToolMaterial.IRON, 1.0f, -2.8f)));
+        TOOLS.put("megalodon_blade", ITEMS.registerItem("megalodon_blade", Item::new, () -> new Item.Properties().sword(ToolMaterial.NETHERITE, 5.0f, -2.2f)));
+        TOOLS.put("titan_axe", ITEMS.registerItem("titan_axe", Item::new, () -> new Item.Properties().axe(ToolMaterial.NETHERITE, 6.0f, -3.0f)));
+        TOOLS.put("emperor_blade", ITEMS.registerItem("emperor_blade", Item::new, () -> new Item.Properties().sword(ToolMaterial.NETHERITE, 6.0f, -2.0f)));
     }
 
     static {
