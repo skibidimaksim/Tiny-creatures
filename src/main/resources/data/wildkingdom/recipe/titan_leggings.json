@@ -1,0 +1,16 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "equipment",
+ "pattern": [
+  "XXX",
+  "X X",
+  "X X"
+ ],
+ "key": {
+  "X": "wildkingdom:titan_scale"
+ },
+ "result": {
+  "id": "wildkingdom:titan_leggings",
+  "count": 1
+ }
+}

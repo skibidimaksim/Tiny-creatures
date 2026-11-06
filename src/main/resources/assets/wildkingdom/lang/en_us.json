@@ -187,5 +187,13 @@
  "block.wildkingdom.resin": "Resin",
  "fluid_type.wildkingdom.resin": "Resin",
  "msg.wildkingdom.captured": "Trapped in resin: %s",
- "msg.wildkingdom.hardened": "The resin in the bucket has hardened into amber!"
+ "msg.wildkingdom.hardened": "The resin in the bucket has hardened into amber!",
+ "item.wildkingdom.chitin_helmet": "Chitin Helmet",
+ "item.wildkingdom.chitin_chestplate": "Chitin Chestplate",
+ "item.wildkingdom.chitin_leggings": "Chitin Leggings",
+ "item.wildkingdom.chitin_boots": "Chitin Boots",
+ "item.wildkingdom.titan_helmet": "Titan Helmet",
+ "item.wildkingdom.titan_chestplate": "Titan Chestplate",
+ "item.wildkingdom.titan_leggings": "Titan Leggings",
+ "item.wildkingdom.titan_boots": "Titan Boots"
 }

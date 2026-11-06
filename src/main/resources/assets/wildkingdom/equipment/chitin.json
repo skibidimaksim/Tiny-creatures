@@ -1,0 +1,14 @@
+{
+ "layers": {
+  "humanoid": [
+   {
+    "texture": "wildkingdom:chitin"
+   }
+  ],
+  "humanoid_leggings": [
+   {
+    "texture": "wildkingdom:chitin"
+   }
+  ]
+ }
+}

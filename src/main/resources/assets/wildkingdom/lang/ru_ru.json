@@ -187,5 +187,13 @@
  "block.wildkingdom.resin": "Смола",
  "fluid_type.wildkingdom.resin": "Смола",
  "msg.wildkingdom.captured": "Застряло в смоле: %s",
- "msg.wildkingdom.hardened": "Смола в ведре застыла и стала янтарём!"
+ "msg.wildkingdom.hardened": "Смола в ведре застыла и стала янтарём!",
+ "item.wildkingdom.chitin_helmet": "Хитиновый шлем",
+ "item.wildkingdom.chitin_chestplate": "Хитиновый нагрудник",
+ "item.wildkingdom.chitin_leggings": "Хитиновые поножи",
+ "item.wildkingdom.chitin_boots": "Хитиновые ботинки",
+ "item.wildkingdom.titan_helmet": "Титановый шлем",
+ "item.wildkingdom.titan_chestplate": "Титановый нагрудник",
+ "item.wildkingdom.titan_leggings": "Титановые поножи",
+ "item.wildkingdom.titan_boots": "Титановые ботинки"
 }

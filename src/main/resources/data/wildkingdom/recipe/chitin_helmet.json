@@ -1,0 +1,15 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "equipment",
+ "pattern": [
+  "XXX",
+  "X X"
+ ],
+ "key": {
+  "X": "wildkingdom:chitin_shard"
+ },
+ "result": {
+  "id": "wildkingdom:chitin_helmet",
+  "count": 1
+ }
+}
