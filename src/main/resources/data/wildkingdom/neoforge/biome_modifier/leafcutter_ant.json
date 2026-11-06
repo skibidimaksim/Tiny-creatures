@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/leafcutter_ant",
+ "spawners": {
+  "type": "wildkingdom:leafcutter_ant",
+  "weight": 10,
+  "minCount": 4,
+  "maxCount": 8
+ }
+}

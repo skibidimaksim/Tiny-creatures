@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/terror_bird",
+ "spawners": {
+  "type": "wildkingdom:terror_bird",
+  "weight": 4,
+  "minCount": 1,
+  "maxCount": 2
+ }
+}

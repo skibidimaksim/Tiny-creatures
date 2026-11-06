@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/harpy_eagle",
+ "spawners": {
+  "type": "wildkingdom:harpy_eagle",
+  "weight": 4,
+  "minCount": 1,
+  "maxCount": 2
+ }
+}

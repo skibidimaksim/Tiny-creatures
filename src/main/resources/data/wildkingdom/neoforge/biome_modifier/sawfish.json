@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/sawfish",
+ "spawners": {
+  "type": "wildkingdom:sawfish",
+  "weight": 4,
+  "minCount": 1,
+  "maxCount": 2
+ }
+}

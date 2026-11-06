@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/sea_serpent",
+ "spawners": {
+  "type": "wildkingdom:sea_serpent",
+  "weight": 2,
+  "minCount": 1,
+  "maxCount": 1
+ }
+}

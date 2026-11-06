@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/hercules_beetle",
+ "spawners": {
+  "type": "wildkingdom:hercules_beetle",
+  "weight": 5,
+  "minCount": 1,
+  "maxCount": 2
+ }
+}

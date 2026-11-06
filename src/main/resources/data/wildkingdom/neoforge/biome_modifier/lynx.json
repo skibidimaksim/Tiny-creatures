@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/lynx",
+ "spawners": {
+  "type": "wildkingdom:lynx",
+  "weight": 6,
+  "minCount": 1,
+  "maxCount": 2
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/bullet_ant",
+ "spawners": {
+  "type": "wildkingdom:bullet_ant",
+  "weight": 8,
+  "minCount": 2,
+  "maxCount": 5
+ }
+}

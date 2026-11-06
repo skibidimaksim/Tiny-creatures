@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/giant_centipede",
+ "spawners": {
+  "type": "wildkingdom:giant_centipede",
+  "weight": 6,
+  "minCount": 1,
+  "maxCount": 2
+ }
+}

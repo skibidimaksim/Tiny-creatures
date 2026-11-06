@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/ember_drake",
+ "spawners": {
+  "type": "wildkingdom:ember_drake",
+  "weight": 1,
+  "minCount": 1,
+  "maxCount": 1
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/yak",
+ "spawners": {
+  "type": "wildkingdom:yak",
+  "weight": 6,
+  "minCount": 2,
+  "maxCount": 4
+ }
+}

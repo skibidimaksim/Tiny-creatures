@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/mantis_shrimp",
+ "spawners": {
+  "type": "wildkingdom:mantis_shrimp",
+  "weight": 6,
+  "minCount": 1,
+  "maxCount": 3
+ }
+}

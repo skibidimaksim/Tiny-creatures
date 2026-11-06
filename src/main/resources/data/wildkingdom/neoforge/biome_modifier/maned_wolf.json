@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/maned_wolf",
+ "spawners": {
+  "type": "wildkingdom:maned_wolf",
+  "weight": 6,
+  "minCount": 1,
+  "maxCount": 3
+ }
+}

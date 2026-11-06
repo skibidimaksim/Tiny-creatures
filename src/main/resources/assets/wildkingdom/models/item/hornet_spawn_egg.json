@@ -1,0 +1,6 @@
+{
+ "parent": "minecraft:item/generated",
+ "textures": {
+  "layer0": "wildkingdom:item/hornet_spawn_egg"
+ }
+}

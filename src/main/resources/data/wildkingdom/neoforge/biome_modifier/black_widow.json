@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/black_widow",
+ "spawners": {
+  "type": "wildkingdom:black_widow",
+  "weight": 6,
+  "minCount": 1,
+  "maxCount": 2
+ }
+}

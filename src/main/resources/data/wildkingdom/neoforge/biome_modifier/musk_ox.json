@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/musk_ox",
+ "spawners": {
+  "type": "wildkingdom:musk_ox",
+  "weight": 6,
+  "minCount": 2,
+  "maxCount": 5
+ }
+}

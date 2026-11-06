@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/firefly",
+ "spawners": {
+  "type": "wildkingdom:firefly",
+  "weight": 10,
+  "minCount": 3,
+  "maxCount": 8
+ }
+}

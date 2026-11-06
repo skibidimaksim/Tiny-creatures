@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/wolverine",
+ "spawners": {
+  "type": "wildkingdom:wolverine",
+  "weight": 6,
+  "minCount": 1,
+  "maxCount": 2
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/camel",
+ "spawners": {
+  "type": "wildkingdom:camel",
+  "weight": 6,
+  "minCount": 2,
+  "maxCount": 4
+ }
+}

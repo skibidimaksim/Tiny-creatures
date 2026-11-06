@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/thorny_devil",
+ "spawners": {
+  "type": "wildkingdom:thorny_devil",
+  "weight": 8,
+  "minCount": 1,
+  "maxCount": 3
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/warthog",
+ "spawners": {
+  "type": "wildkingdom:warthog",
+  "weight": 8,
+  "minCount": 2,
+  "maxCount": 5
+ }
+}

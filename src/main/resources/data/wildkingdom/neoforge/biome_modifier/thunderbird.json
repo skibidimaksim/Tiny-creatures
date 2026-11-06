@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/thunderbird",
+ "spawners": {
+  "type": "wildkingdom:thunderbird",
+  "weight": 1,
+  "minCount": 1,
+  "maxCount": 1
+ }
+}

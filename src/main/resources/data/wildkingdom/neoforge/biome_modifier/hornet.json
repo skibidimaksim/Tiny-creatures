@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/hornet",
+ "spawners": {
+  "type": "wildkingdom:hornet",
+  "weight": 7,
+  "minCount": 2,
+  "maxCount": 4
+ }
+}

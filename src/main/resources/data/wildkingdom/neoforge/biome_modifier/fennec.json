@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/fennec",
+ "spawners": {
+  "type": "wildkingdom:fennec",
+  "weight": 9,
+  "minCount": 1,
+  "maxCount": 3
+ }
+}

@@ -158,6 +158,7 @@ public abstract class WildMob extends Animal implements GeoEntity {
             this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.2, false));
         }
         this.goalSelector.addGoal(1, new RestGoal(this));
+        if (Abilities.ranged(this)) this.goalSelector.addGoal(2, new Abilities.AbilityGoal(this));
         if (!spec.boss()) {
             this.goalSelector.addGoal(3, new BreedGoal(this, 1.0));
         }
@@ -393,6 +394,7 @@ public abstract class WildMob extends Animal implements GeoEntity {
     public boolean doHurtTarget(ServerLevel level, Entity target) {
         boolean hit = super.doHurtTarget(level, target);
         if (hit) {
+            Abilities.onHit(this, level, target);
             triggerAnim("Actions", "attack.swing");
             if (target instanceof WildMob victim && !victim.isAlive()) {
                 this.heal(4.0f);
@@ -408,6 +410,7 @@ public abstract class WildMob extends Animal implements GeoEntity {
     @Override
     public boolean hurtServer(ServerLevel level, DamageSource source, float amount) {
         boolean r = super.hurtServer(level, source, amount);
+        if (r) Abilities.onHurt(this, level, source);
         if (r && "spray".equals(spec.react()) && source.getEntity() instanceof LivingEntity attacker) {
             attacker.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 100, 0));
             attacker.addEffect(new MobEffectInstance(MobEffects.NAUSEA, 160, 0));
@@ -547,6 +550,7 @@ public abstract class WildMob extends Animal implements GeoEntity {
     @Override
     public void aiStep() {
         super.aiStep();
+        if (this.level() instanceof ServerLevel sl0) Abilities.tick(this, sl0);
         if (bossBar != null) {
             bossBar.setProgress(this.getHealth() / this.getMaxHealth());
             if (!enraged && this.getHealth() < this.getMaxHealth() * 0.5f) {

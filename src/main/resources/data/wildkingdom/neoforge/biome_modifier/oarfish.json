@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/oarfish",
+ "spawners": {
+  "type": "wildkingdom:oarfish",
+  "weight": 5,
+  "minCount": 1,
+  "maxCount": 2
+ }
+}

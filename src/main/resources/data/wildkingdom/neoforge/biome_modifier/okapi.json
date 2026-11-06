@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/okapi",
+ "spawners": {
+  "type": "wildkingdom:okapi",
+  "weight": 7,
+  "minCount": 1,
+  "maxCount": 3
+ }
+}

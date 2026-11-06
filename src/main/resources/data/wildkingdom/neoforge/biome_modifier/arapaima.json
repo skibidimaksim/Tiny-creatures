@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/arapaima",
+ "spawners": {
+  "type": "wildkingdom:arapaima",
+  "weight": 8,
+  "minCount": 1,
+  "maxCount": 3
+ }
+}

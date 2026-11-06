@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/shoebill",
+ "spawners": {
+  "type": "wildkingdom:shoebill",
+  "weight": 6,
+  "minCount": 1,
+  "maxCount": 2
+ }
+}

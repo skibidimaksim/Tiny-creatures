@@ -1,0 +1,9 @@
+{
+ "values": [
+  "minecraft:jungle",
+  "minecraft:sparse_jungle",
+  "minecraft:savanna",
+  "minecraft:mangrove_swamp",
+  "minecraft:beach"
+ ]
+}

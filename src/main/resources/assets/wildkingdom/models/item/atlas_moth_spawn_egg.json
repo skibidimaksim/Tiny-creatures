@@ -1,0 +1,6 @@
+{
+ "parent": "minecraft:item/generated",
+ "textures": {
+  "layer0": "wildkingdom:item/atlas_moth_spawn_egg"
+ }
+}

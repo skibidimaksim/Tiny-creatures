@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/atlas_moth",
+ "spawners": {
+  "type": "wildkingdom:atlas_moth",
+  "weight": 6,
+  "minCount": 1,
+  "maxCount": 2
+ }
+}

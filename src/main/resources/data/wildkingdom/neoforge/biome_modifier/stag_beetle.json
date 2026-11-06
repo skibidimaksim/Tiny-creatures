@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/stag_beetle",
+ "spawners": {
+  "type": "wildkingdom:stag_beetle",
+  "weight": 7,
+  "minCount": 1,
+  "maxCount": 3
+ }
+}

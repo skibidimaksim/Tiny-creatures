@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/glyptodon",
+ "spawners": {
+  "type": "wildkingdom:glyptodon",
+  "weight": 3,
+  "minCount": 1,
+  "maxCount": 2
+ }
+}

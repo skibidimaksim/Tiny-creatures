@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/cave_bear",
+ "spawners": {
+  "type": "wildkingdom:cave_bear",
+  "weight": 4,
+  "minCount": 1,
+  "maxCount": 2
+ }
+}

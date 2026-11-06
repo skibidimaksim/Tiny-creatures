@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/frost_wyrm",
+ "spawners": {
+  "type": "wildkingdom:frost_wyrm",
+  "weight": 1,
+  "minCount": 1,
+  "maxCount": 1
+ }
+}

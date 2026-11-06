@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/piranha",
+ "spawners": {
+  "type": "wildkingdom:piranha",
+  "weight": 10,
+  "minCount": 3,
+  "maxCount": 7
+ }
+}
