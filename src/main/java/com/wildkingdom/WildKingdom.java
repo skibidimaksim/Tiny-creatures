@@ -52,16 +52,6 @@ public final class WildKingdom {
         TOOLS.put("emperor_blade", ITEMS.registerItem("emperor_blade", Item::new, () -> new Item.Properties().sword(ToolMaterial.NETHERITE, 6.0f, -2.0f)));
     }
 
-    static {
-        for (String set : new String[]{"chitin", "titan"}) {
-            for (net.minecraft.world.item.equipment.ArmorType t : net.minecraft.world.item.equipment.ArmorType.values()) {
-                if (t == net.minecraft.world.item.equipment.ArmorType.BODY) continue;
-                String n = set + "_" + t.getName();
-                TOOLS.put(n, ITEMS.registerItem(n, Item::new, Armors.props(set, t)));
-            }
-        }
-    }
-
     private static WildMob make(EntityType<? extends WildMob> type, Level level, Species.Spec s) {
         return switch (s.arch()) {
             case "F" -> new FlyingMob(type, level, s);
