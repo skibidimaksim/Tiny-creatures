@@ -22,6 +22,13 @@ jobs:
           gradle-version: '9.2.1'
       - name: Build mod
         run: gradle build --no-daemon --console=plain --stacktrace
+      - name: Inspect GeckoLib API
+        continue-on-error: true
+        run: |
+          J=$(find ~/.gradle -name 'geckolib-neoforge-1.21.11*.jar' ! -name '*sources*' | head -1)
+          echo "JAR=$J"
+          for c in software.bernie.geckolib.renderer.GeoArmorRenderer software.bernie.geckolib.animatable.client.GeoRenderProvider software.bernie.geckolib.animatable.GeoItem software.bernie.geckolib.model.DefaultedItemGeoModel software.bernie.geckolib.model.GeoModel software.bernie.geckolib.renderer.base.GeoRenderState; do echo "=== $c"; javap -p -cp "$J" $c || true; done
+          unzip -l "$J" | grep -i "renderer/" | head -60
       - name: Upload JAR
         uses: actions/upload-artifact@v4
         with:
