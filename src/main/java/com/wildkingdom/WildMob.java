@@ -81,7 +81,7 @@ public abstract class WildMob extends Animal implements GeoEntity {
         if (spec.boss()) {
             this.bossBar = new ServerBossEvent(this.getDisplayName(), BossEvent.BossBarColor.PURPLE, BossEvent.BossBarOverlay.PROGRESS);
         }
-        initGoals();
+        if (!level.isClientSide()) initGoals();
     }
 
     public Species.Spec spec() { return spec; }
