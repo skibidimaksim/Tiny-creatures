@@ -41,10 +41,10 @@ public final class Armor {
     }
 
     private static void add(String n, ArmorMaterial m) {
-        PIECES.put(n + "_helmet", ITEMS.registerItem(n + "_helmet", Item::new, () -> new Item.Properties().humanoidArmor(m, ArmorType.HELMET)));
-        PIECES.put(n + "_chestplate", ITEMS.registerItem(n + "_chestplate", Item::new, () -> new Item.Properties().humanoidArmor(m, ArmorType.CHESTPLATE)));
-        PIECES.put(n + "_leggings", ITEMS.registerItem(n + "_leggings", Item::new, () -> new Item.Properties().humanoidArmor(m, ArmorType.LEGGINGS)));
-        PIECES.put(n + "_boots", ITEMS.registerItem(n + "_boots", Item::new, () -> new Item.Properties().humanoidArmor(m, ArmorType.BOOTS)));
+        PIECES.put(n + "_helmet", ITEMS.registerItem(n + "_helmet", p -> new ArmorGeoItem(p, n), () -> new Item.Properties().humanoidArmor(m, ArmorType.HELMET)));
+        PIECES.put(n + "_chestplate", ITEMS.registerItem(n + "_chestplate", p -> new ArmorGeoItem(p, n), () -> new Item.Properties().humanoidArmor(m, ArmorType.CHESTPLATE)));
+        PIECES.put(n + "_leggings", ITEMS.registerItem(n + "_leggings", p -> new ArmorGeoItem(p, n), () -> new Item.Properties().humanoidArmor(m, ArmorType.LEGGINGS)));
+        PIECES.put(n + "_boots", ITEMS.registerItem(n + "_boots", p -> new ArmorGeoItem(p, n), () -> new Item.Properties().humanoidArmor(m, ArmorType.BOOTS)));
     }
 
     public static void init(IEventBus bus) { ITEMS.register(bus); }
