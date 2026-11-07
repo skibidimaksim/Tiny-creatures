@@ -512,7 +512,7 @@ public abstract class WildMob extends Animal implements GeoEntity {
     @Override
     protected Vec3 getPassengerAttachmentPoint(Entity passenger, net.minecraft.world.entity.EntityDimensions dims, float scale) {
         Float top = SaddleTop.TOP.get(spec.id());
-        return new Vec3(0.0, top != null ? top : dims.height() * 0.9, 0.0);
+        return new Vec3(0.0, (top != null ? top : dims.height() * 0.9) + 0.4, 0.0);
     }
 
     @Override
