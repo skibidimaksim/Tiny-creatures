@@ -1,0 +1,34 @@
+name: Build ComfyKit
+
+on:
+  push:
+    paths: ['comfykit/**', '.github/workflows/comfykit.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '7.6.4'
+      - name: Build mod
+        working-directory: comfykit
+        run: gradle build --no-daemon --console=plain --stacktrace
+      - name: Upload JAR
+        uses: actions/upload-artifact@v4
+        with:
+          name: ComfyKit-JAR
+          path: |
+            comfykit/build/libs/comfykit-*.jar
+            !comfykit/build/libs/*-dev.jar
+          if-no-files-found: error
