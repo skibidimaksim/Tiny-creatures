@@ -15,6 +15,12 @@ repositories {
     maven { url = 'https://libraries.minecraft.net/' }
 }
 
+loom {
+    forge {
+        pack200Provider.set(new dev.architectury.pack200.java.Pack200Adapter())
+    }
+}
+
 dependencies {
     minecraft 'com.mojang:minecraft:1.8.9'
     mappings 'de.oceanlabs.mcp:mcp_stable:22-1.8.9'
