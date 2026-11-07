@@ -510,6 +510,12 @@ public abstract class WildMob extends Animal implements GeoEntity {
 
     // ------------------------------------------------------------ riding
     @Override
+    protected Vec3 getPassengerAttachmentPoint(Entity passenger, net.minecraft.world.entity.EntityDimensions dims, float scale) {
+        Float top = SaddleTop.TOP.get(spec.id());
+        return new Vec3(0.0, top != null ? top : dims.height() * 0.9, 0.0);
+    }
+
+    @Override
     public LivingEntity getControllingPassenger() {
         if (spec.ride() && isSaddled() && this.getFirstPassenger() instanceof Player p && isOwner(p)) return p;
         return null;
@@ -527,8 +533,14 @@ public abstract class WildMob extends Animal implements GeoEntity {
             float side = p.xxa * 0.5f;
             float fwd = p.zza;
             if (fwd <= 0.0f) fwd *= 0.25f;
-            this.setSpeed((float) this.getAttributeValue(Attributes.MOVEMENT_SPEED));
-            super.travel(new Vec3(side, travelVector.y, fwd));
+            float spd = (float) this.getAttributeValue(Attributes.MOVEMENT_SPEED);
+            double up = travelVector.y;
+            if (this instanceof FlyingMob) {
+                spd *= 3.0f;
+                up = -Math.sin(Math.toRadians(p.getXRot())) * Math.abs(fwd) * 1.2;
+            }
+            this.setSpeed(spd);
+            super.travel(new Vec3(side, up, fwd));
         } else {
             super.travel(travelVector);
         }

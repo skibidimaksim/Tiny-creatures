@@ -11,9 +11,8 @@ import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animatable.client.GeoRenderProvider;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.animatable.manager.AnimatableManager;
-import software.bernie.geckolib.model.GeoModel;
+import software.bernie.geckolib.model.DefaultedGeoModel;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
-import software.bernie.geckolib.renderer.base.GeoRenderState;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
 public class ArmorGeoItem extends Item implements GeoItem {
@@ -45,18 +44,10 @@ public class ArmorGeoItem extends Item implements GeoItem {
         });
     }
 
-    static final class SetModel extends GeoModel<ArmorGeoItem> {
-        private final Identifier model, tex, anim;
+    static final class SetModel extends DefaultedGeoModel<ArmorGeoItem> {
+        SetModel(String set) { super(Identifier.fromNamespaceAndPath(WildKingdom.MODID, set)); }
 
-        SetModel(String set) {
-            this.model = Identifier.fromNamespaceAndPath(WildKingdom.MODID, "armor/" + set);
-            this.tex = Identifier.fromNamespaceAndPath(WildKingdom.MODID, "textures/armor/" + set + ".png");
-            this.anim = Identifier.fromNamespaceAndPath(WildKingdom.MODID, "armor/" + set);
-        }
-
-        @Override public Identifier getModelResource(GeoRenderState s) { return model; }
-        @Override public Identifier getTextureResource(GeoRenderState s) { return tex; }
-        @Override public Identifier getAnimationResource(ArmorGeoItem a) { return anim; }
+        @Override protected String subtype() { return "armor"; }
     }
 
     static final class SetRenderer<R extends HumanoidRenderState & GeoRenderState> extends GeoArmorRenderer<ArmorGeoItem, R> {

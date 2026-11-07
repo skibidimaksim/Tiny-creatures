@@ -293,5 +293,7 @@
  "entity.wildkingdom.mantis_shrimp": "Mantis Shrimp",
  "item.wildkingdom.mantis_shrimp_spawn_egg": "Mantis Shrimp Spawn Egg",
  "entity.wildkingdom.hornet": "Giant Hornet",
- "item.wildkingdom.hornet_spawn_egg": "Giant Hornet Spawn Egg"
+ "item.wildkingdom.hornet_spawn_egg": "Giant Hornet Spawn Egg",
+ "entity.wildkingdom.quetzalcoatlus": "Quetzalcoatlus",
+ "item.wildkingdom.quetzalcoatlus_spawn_egg": "Quetzalcoatlus Spawn Egg"
 }

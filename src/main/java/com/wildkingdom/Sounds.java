@@ -108,6 +108,7 @@ public final class Sounds {
         Map.entry("cassowary", "honk"),
         Map.entry("phoenix", "screech"),
         Map.entry("thunderbird", "screech"),
+        Map.entry("quetzalcoatlus", "screech"),
         Map.entry("gila_monster", "squeak"),
         Map.entry("giant_tortoise", "bellow"),
         Map.entry("thorny_devil", "squeak"),

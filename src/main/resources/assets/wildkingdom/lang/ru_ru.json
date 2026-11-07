@@ -293,5 +293,7 @@
  "entity.wildkingdom.mantis_shrimp": "Рак-богомол",
  "item.wildkingdom.mantis_shrimp_spawn_egg": "Яйцо призыва: Рак-богомол",
  "entity.wildkingdom.hornet": "Шершень-гигант",
- "item.wildkingdom.hornet_spawn_egg": "Яйцо призыва: Шершень-гигант"
+ "item.wildkingdom.hornet_spawn_egg": "Яйцо призыва: Шершень-гигант",
+ "entity.wildkingdom.quetzalcoatlus": "Кетцалькоатль",
+ "item.wildkingdom.quetzalcoatlus_spawn_egg": "Яйцо призыва: Кетцалькоатль"
 }

@@ -1,0 +1,10 @@
+{
+ "type": "neoforge:add_spawns",
+ "biomes": "#wildkingdom:spawn/quetzalcoatlus",
+ "spawners": {
+  "type": "wildkingdom:quetzalcoatlus",
+  "weight": 3,
+  "minCount": 1,
+  "maxCount": 2
+ }
+}

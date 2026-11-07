@@ -1,0 +1,53 @@
+package com.wildkingdom;
+
+import java.util.Map;
+
+public final class SaddleTop {
+    private SaddleTop() {}
+    public static final Map<String, Float> TOP = Map.ofEntries(
+        Map.entry("gazelle", 0.95f),
+        Map.entry("bison", 1.68f),
+        Map.entry("elephant", 2.784f),
+        Map.entry("moose", 1.596f),
+        Map.entry("grizzly", 1.457f),
+        Map.entry("tiger", 1.258f),
+        Map.entry("snow_leopard", 1.086f),
+        Map.entry("rhino", 1.642f),
+        Map.entry("raccoon", 0.45f),
+        Map.entry("kangaroo", 2.0f),
+        Map.entry("gorilla", 1.629f),
+        Map.entry("emu", 1.346f),
+        Map.entry("crocodile", 0.63f),
+        Map.entry("lion", 1.425f),
+        Map.entry("giraffe", 2.309f),
+        Map.entry("zebra", 1.256f),
+        Map.entry("hippo", 1.571f),
+        Map.entry("cheetah", 1.1f),
+        Map.entry("hyena", 0.984f),
+        Map.entry("capybara", 0.762f),
+        Map.entry("walrus", 0.181f),
+        Map.entry("flamingo", 1.3f),
+        Map.entry("peacock", 0.95f),
+        Map.entry("okapi", 1.298f),
+        Map.entry("warthog", 0.661f),
+        Map.entry("tapir", 1.055f),
+        Map.entry("camel", 1.744f),
+        Map.entry("maned_wolf", 1.075f),
+        Map.entry("wolverine", 0.55f),
+        Map.entry("lynx", 0.785f),
+        Map.entry("giant_sloth", 2.75f),
+        Map.entry("yak", 1.629f),
+        Map.entry("musk_ox", 1.333f),
+        Map.entry("mammoth", 3.657f),
+        Map.entry("sabertooth", 1.454f),
+        Map.entry("dire_wolf", 1.211f),
+        Map.entry("cave_bear", 1.848f),
+        Map.entry("glyptodon", 1.516f),
+        Map.entry("terror_bird", 1.733f),
+        Map.entry("shoebill", 1.15f),
+        Map.entry("cassowary", 1.249f),
+        Map.entry("giant_tortoise", 0.9f),
+        Map.entry("goliath_beetle", 0.5f),
+        Map.entry("hercules_beetle", 0.65f),
+        Map.entry("quetzalcoatlus", 0.938f));
+}
