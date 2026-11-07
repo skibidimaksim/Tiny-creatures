@@ -163,17 +163,30 @@ public class ComfyKit {
         ClientRegistry.registerKeyBinding(kBright);
         ClientRegistry.registerKeyBinding(kHud);
         ClientRegistry.registerKeyBinding(kSprint);
+        HardMode.level = cfg.getInt("hardLevel", "hard", 2, 0, 3, "Hard survival level: 0 off, 1 normal+, 2 hard, 3 brutal (singleplayer / own server)");
+        HardMode hm = new HardMode();
+        MinecraftForge.EVENT_BUS.register(hm);
+        FMLCommonHandler.instance().bus().register(hm);
         MinecraftForge.EVENT_BUS.register(this);
         FMLCommonHandler.instance().bus().register(this);
         ClientCommandHandler.instance.registerCommand(new CommandBase() {
             @Override public String getCommandName() { return "comfy"; }
-            @Override public String getCommandUsage(ICommandSender s) { return "/comfy <hud|fps|cps|coords|armor|effects|sprint|autotool|fullbright|death|goals|goals list|cleardeath>"; }
+            @Override public String getCommandUsage(ICommandSender s) { return "/comfy <hud|fps|cps|coords|armor|effects|sprint|autotool|fullbright|death|goals|goals list|hard 0-3|cleardeath>"; }
             @Override public int getRequiredPermissionLevel() { return 0; }
             @Override public boolean canCommandSenderUseCommand(ICommandSender s) { return true; }
             @Override public void processCommand(ICommandSender s, String[] a) {
                 if (a.length == 0) { say(getCommandUsage(s)); return; }
                 if (a[0].equalsIgnoreCase("goals") && a.length > 1 && a[1].equalsIgnoreCase("list")) {
                     for (int g = 0; g < GOALS.length; g++) say((DONE[g] ? "\u00a7a[x] " : "\u00a77[ ] ") + GOALS[g]);
+                    return;
+                }
+                if (a[0].equalsIgnoreCase("hard")) {
+                    if (a.length < 2) { say("Hard level: " + HardMode.level + " (/comfy hard 0-3)"); return; }
+                    int lv = Math.max(0, Math.min(3, Integer.parseInt(a[1].trim())));
+                    HardMode.level = lv;
+                    cfg.get("hard", "hardLevel", 2).set(lv);
+                    cfg.save();
+                    say("Hard level: " + lv + (lv == 0 ? " (off)" : ""));
                     return;
                 }
                 if (a[0].equalsIgnoreCase("cleardeath")) { deathPos = null; say("Death marker cleared"); return; }
