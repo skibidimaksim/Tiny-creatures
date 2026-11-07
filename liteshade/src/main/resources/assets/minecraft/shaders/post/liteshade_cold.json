@@ -1,0 +1,44 @@
+{
+ "targets": [
+  "swap"
+ ],
+ "passes": [
+  {
+   "name": "liteshade",
+   "intarget": "minecraft:main",
+   "outtarget": "swap",
+   "uniforms": [
+    {
+     "name": "Grade",
+     "values": [
+      1.1,
+      1.1,
+      1.0,
+      0.25
+     ]
+    },
+    {
+     "name": "Tint",
+     "values": [
+      0.88,
+      0.98,
+      1.15
+     ]
+    },
+    {
+     "name": "Fx",
+     "values": [
+      0.1,
+      0.3,
+      0.4
+     ]
+    }
+   ]
+  },
+  {
+   "name": "blit",
+   "intarget": "swap",
+   "outtarget": "minecraft:main"
+  }
+ ]
+}
