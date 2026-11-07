@@ -26,9 +26,7 @@ jobs:
         continue-on-error: true
         run: |
           J=$(find ~/.gradle -name 'geckolib-neoforge-1.21.11*.jar' ! -name '*sources*' | head -1)
-          for c in software.bernie.geckolib.animatable.SingletonGeoAnimatable software.bernie.geckolib.animatable.GeoAnimatable 'software.bernie.geckolib.renderer.GeoArmorRenderer$ArmorSegment' 'software.bernie.geckolib.renderer.GeoArmorRenderer$RenderData' software.bernie.geckolib.model.DefaultedGeoModel; do echo "=== $c"; javap -p -constants -cp "$J" "$c" || true; done
-          unzip -l "$J" | grep -i "mixin" | head -20
-          mkdir -p /tmp/x && cd /tmp/x && unzip -q -o "$J" 'META-INF/*' 'geckolib*.json' 2>/dev/null; ls /tmp/x; find ~/.gradle -name '*geckolib*sources*' | head
+          for c in software.bernie.geckolib.renderer.GeoEntityRenderer software.bernie.geckolib.renderer.base.GeoRenderState software.bernie.geckolib.constant.dataticket.DataTicket software.bernie.geckolib.constant.DataTickets software.bernie.geckolib.model.DefaultedEntityGeoModel; do echo "=== $c"; javap -p -cp "$J" "$c" | grep -v 'lambda\$' || true; done
       - name: Upload JAR
         uses: actions/upload-artifact@v4
         with:
