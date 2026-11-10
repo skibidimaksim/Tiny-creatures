@@ -1,0 +1,23 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="MIT"
+
+[[mods]]
+modId="comfykit"
+version="1.0.0"
+displayName="ComfyKit"
+description='PvP HUD (FPS, CPS, armor, effects) and comfortable survival tools.'
+
+[[dependencies.comfykit]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.16.5]"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.comfykit]]
+modId="forge"
+mandatory=true
+versionRange="[36,)"
+ordering="NONE"
+side="CLIENT"
