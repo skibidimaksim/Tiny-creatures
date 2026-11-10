@@ -12,9 +12,6 @@ import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.RenderHelper;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.client.settings.KeyBinding;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
-import net.minecraft.item.Item;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.entity.player.EntityPlayer;
@@ -45,8 +42,8 @@ import org.lwjgl.input.Keyboard;
 @Mod(modid = "comfykit", name = "ComfyKit", version = "1.0.0", clientSideOnly = true, acceptedMinecraftVersions = "[1.8.9]")
 public class ComfyKit {
     // feature names (also used by /comfy and the config file)
-    private static final String[] FEATURES = {"hud", "fps", "cps", "coords", "armor", "effects", "sprint", "autotool", "fullbright", "death", "goals"};
-    private static final boolean[] ON = {true, true, true, true, true, true, false, true, false, true, true};
+    private static final String[] FEATURES = {"hud", "fps", "cps", "coords", "armor", "effects", "sprint", "autotool", "fullbright", "death"};
+    private static final boolean[] ON = {true, true, true, true, true, true, false, true, false, true};
 
     private static Configuration cfg;
     private static final List<Long> LEFT = new ArrayList<Long>();
@@ -57,87 +54,6 @@ public class ComfyKit {
     private static BlockPos deathPos = null;
     private static boolean wasDead = false;
     private static int lastSlot = -1;
-
-    private static final String[] GOALS = {
-        "Добыть дерево", "Каменная кирка", "Печка", "Железный слиток", "Железная кирка", "Алмаз",
-        "Алмазная кирка", "Обсидиан", "Зайти в Незер", "Огненный стержень", "Жемчуг Эндера",
-        "Глаз Эндера", "Зайти в Энд", "Яйцо дракона (победа!)"};
-    private static final boolean[] DONE = new boolean[GOALS.length];
-    private static String worldKey = null;
-    private static int scanTimer = 0;
-
-    private static boolean hasItem(EntityPlayer p, Item it) {
-        if (it == null) return false;
-        for (ItemStack s : p.inventory.mainInventory) if (s != null && s.getItem() == it) return true;
-        for (ItemStack s : p.inventory.armorInventory) if (s != null && s.getItem() == it) return true;
-        return false;
-    }
-
-    private static boolean[] check(EntityPlayer p) {
-        boolean[] r = new boolean[GOALS.length];
-        r[0] = hasItem(p, Item.getItemFromBlock(Blocks.log)) || hasItem(p, Item.getItemFromBlock(Blocks.log2)) || hasItem(p, Item.getItemFromBlock(Blocks.planks));
-        r[1] = hasItem(p, Items.stone_pickaxe);
-        r[2] = hasItem(p, Item.getItemFromBlock(Blocks.furnace));
-        r[3] = hasItem(p, Items.iron_ingot);
-        r[4] = hasItem(p, Items.iron_pickaxe);
-        r[5] = hasItem(p, Items.diamond);
-        r[6] = hasItem(p, Items.diamond_pickaxe);
-        r[7] = hasItem(p, Item.getItemFromBlock(Blocks.obsidian));
-        r[8] = p.dimension == -1;
-        r[9] = hasItem(p, Items.blaze_rod);
-        r[10] = hasItem(p, Items.ender_pearl);
-        r[11] = hasItem(p, Items.ender_eye);
-        r[12] = p.dimension == 1;
-        r[13] = hasItem(p, Item.getItemFromBlock(Blocks.dragon_egg));
-        return r;
-    }
-
-    private static String currentWorldKey(Minecraft mc) {
-        if (mc.isSingleplayer() && mc.getIntegratedServer() != null) return "sp_" + mc.getIntegratedServer().getWorldName();
-        if (mc.getCurrentServerData() != null) return "mp_" + mc.getCurrentServerData().serverIP;
-        return null;
-    }
-
-    private static void loadGoals(String key) {
-        worldKey = key;
-        for (int i = 0; i < DONE.length; i++) DONE[i] = key != null && cfg.getBoolean("g" + i, "progress_" + key.replaceAll("[^A-Za-z0-9_.-]", "_"), false, "");
-    }
-
-    private static void saveGoal(int i) {
-        if (worldKey == null) return;
-        cfg.get("progress_" + worldKey.replaceAll("[^A-Za-z0-9_.-]", "_"), "g" + i, false).set(true);
-        cfg.save();
-    }
-
-    private static int nextGoal() {
-        for (int i = 0; i < DONE.length; i++) if (!DONE[i]) return i;
-        return -1;
-    }
-
-    private static void tickGoals(Minecraft mc, EntityPlayer p) {
-        String key = currentWorldKey(mc);
-        if (key == null) return;
-        if (!key.equals(worldKey)) loadGoals(key);
-        if (++scanTimer < 20) return;
-        scanTimer = 0;
-        boolean[] now = check(p);
-        for (int i = 0; i < now.length; i++) {
-            if (now[i] && !DONE[i]) {
-                DONE[i] = true;
-                saveGoal(i);
-                say("\u00a76Цель выполнена: \u00a7f" + GOALS[i] + " \u00a77(" + doneCount() + "/" + GOALS.length + ")");
-                int n = nextGoal();
-                if (n >= 0) say("Следующая: \u00a7e" + GOALS[n]);
-                else say("\u00a6aВсе цели выполнены. Ты прошёл Майнкрафт!");
-            }
-        }
-    }
-
-    private static int doneCount() {
-        int c = 0;
-        for (boolean b : DONE) if (b) c++;
-        return c;
-    }
 
     private static int idx(String n) {
         for (int i = 0; i < FEATURES.length; i++) if (FEATURES[i].equalsIgnoreCase(n)) return i;
@@ -163,32 +79,15 @@ public class ComfyKit {
         ClientRegistry.registerKeyBinding(kBright);
         ClientRegistry.registerKeyBinding(kHud);
         ClientRegistry.registerKeyBinding(kSprint);
-        HardMode.level = cfg.getInt("hardLevel", "hard", 2, 0, 3, "Hard survival level: 0 off, 1 normal+, 2 hard, 3 brutal (singleplayer / own server)");
-        HardMode hm = new HardMode();
-        MinecraftForge.EVENT_BUS.register(hm);
-        FMLCommonHandler.instance().bus().register(hm);
         MinecraftForge.EVENT_BUS.register(this);
         FMLCommonHandler.instance().bus().register(this);
         ClientCommandHandler.instance.registerCommand(new CommandBase() {
             @Override public String getCommandName() { return "comfy"; }
-            @Override public String getCommandUsage(ICommandSender s) { return "/comfy <hud|fps|cps|coords|armor|effects|sprint|autotool|fullbright|death|goals|goals list|hard 0-3|cleardeath>"; }
+            @Override public String getCommandUsage(ICommandSender s) { return "/comfy <hud|fps|cps|coords|armor|effects|sprint|autotool|fullbright|death|cleardeath>"; }
             @Override public int getRequiredPermissionLevel() { return 0; }
             @Override public boolean canCommandSenderUseCommand(ICommandSender s) { return true; }
             @Override public void processCommand(ICommandSender s, String[] a) {
                 if (a.length == 0) { say(getCommandUsage(s)); return; }
-                if (a[0].equalsIgnoreCase("goals") && a.length > 1 && a[1].equalsIgnoreCase("list")) {
-                    for (int g = 0; g < GOALS.length; g++) say((DONE[g] ? "\u00a7a[x] " : "\u00a77[ ] ") + GOALS[g]);
-                    return;
-                }
-                if (a[0].equalsIgnoreCase("hard")) {
-                    if (a.length < 2) { say("Hard level: " + HardMode.level + " (/comfy hard 0-3)"); return; }
-                    int lv = Math.max(0, Math.min(3, Integer.parseInt(a[1].trim())));
-                    HardMode.level = lv;
-                    cfg.get("hard", "hardLevel", 2).set(lv);
-                    cfg.save();
-                    say("Hard level: " + lv + (lv == 0 ? " (off)" : ""));
-                    return;
-                }
                 if (a[0].equalsIgnoreCase("cleardeath")) { deathPos = null; say("Death marker cleared"); return; }
                 int i = idx(a[0]);
                 if (i < 0) { say(getCommandUsage(s)); return; }
@@ -285,8 +184,6 @@ public class ComfyKit {
         wasDead = dead;
         if (deathPos != null && p.getDistanceSq(deathPos) < 9.0) { deathPos = null; say("Death point reached"); }
 
-        if (on("goals")) tickGoals(mc, p);
-
         // fullbright persistence (server settings may reset)
         if (on("fullbright") && mc.gameSettings.gammaSetting < 50f) mc.gameSettings.gammaSetting = 100f;
     }
@@ -322,12 +219,6 @@ public class ComfyKit {
         if (on("death") && deathPos != null) {
             int dist = (int) Math.sqrt(p.getDistanceSq(deathPos));
             fr.drawStringWithShadow("☠ " + deathPos.getX() + " " + deathPos.getY() + " " + deathPos.getZ() + " (" + dist + "m)", x, y, 0xFF5555);
-            y += 10;
-        }
-        if (on("goals")) {
-            int n = nextGoal();
-            String txt = n >= 0 ? "Цель: " + GOALS[n] + " (" + doneCount() + "/" + GOALS.length + ")" : "Все цели выполнены!";
-            fr.drawStringWithShadow(txt, x, y, 0xFFD700);
             y += 10;
         }
         if (on("effects")) {
